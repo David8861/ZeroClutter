@@ -23,7 +23,32 @@ namespace ZeroClutter
             }
 
             prefetch.Enabled = false; prefetch.ResetText(); prefetch.Text = "Done";
+
         }
+        private void tempfolder_Click(object sender, EventArgs e)
+        {
+            string[] filePaths = Directory.GetFiles("");
+
+            foreach (string filePath in filePaths)
+            {
+                File.Delete(filePath);
+
+            }
+
+
+        }
+        private void recyclebin_Click(object sender, EventArgs e)
+        {
+            string[] filePaths = Directory.GetFiles("");
+
+            foreach (string filePath in filePaths)
+            {
+                File.Delete(filePath);
+            }
+        }
+
+
+
 
         private void exit_Click(object sender, EventArgs e)
         {
@@ -50,7 +75,8 @@ namespace ZeroClutter
 
             
             aboutthisprogram.Text = "Zero Clutter \n " +
-            " Zero Clutter removes all the annoying files you would much rather not want to deal with.\n";
+            "Zero Clutter removes many of the files you would much rather not want to deal with, with a few clicks." +
+            "\bVisit my Github for more: github.com/David8861.\n";
             aboutthisprogram.Name = "About";
             aboutthisprogram.Size = new Size(535, 340);
             aboutthisprogram.ReadOnly = true;

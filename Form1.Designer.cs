@@ -30,7 +30,7 @@ namespace ZeroClutter
         /// </summary>
         private void InitializeComponent()
         {
-            saver = new Button();
+            
             eventviewer = new Button();
             lanimations = new Button();
             programs = new Button();
@@ -38,6 +38,7 @@ namespace ZeroClutter
             prefetch = new Button();
             tempfolder = new Button();
             topbar = new ToolStrip();
+            saver = new Button();
             exit = new ToolStripMenuItem();
             about = new ToolStripMenuItem();
             topbar.SuspendLayout();
@@ -47,10 +48,10 @@ namespace ZeroClutter
             // 
             saver.FlatStyle = FlatStyle.System;
             saver.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            saver.Location = new Point(482, 265);
+            saver.Location = new Point(452, 267);
             saver.Name = "saver";
             saver.Padding = new Padding(10);
-            saver.Size = new Size(190, 42);
+            saver.Size = new Size(220, 40);
             saver.TabIndex = 1;
             saver.Text = "Save Report";
             // 
@@ -58,10 +59,10 @@ namespace ZeroClutter
             // 
             eventviewer.FlatStyle = FlatStyle.System;
             eventviewer.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            eventviewer.Location = new Point(445, 203);
+            eventviewer.Location = new Point(452, 203);
             eventviewer.Name = "eventviewer";
             eventviewer.Padding = new Padding(10);
-            eventviewer.Size = new Size(190, 50);
+            eventviewer.Size = new Size(220, 58);
             eventviewer.TabIndex = 1;
             eventviewer.Text = "Event Viewer";
             // 
@@ -97,6 +98,7 @@ namespace ZeroClutter
             recyclebin.Size = new Size(220, 160);
             recyclebin.TabIndex = 1;
             recyclebin.Text = "Clean Recycle Bin";
+            recyclebin.Click += Recyclebin_Click;
             // 
             // prefetch
             // 
@@ -120,6 +122,7 @@ namespace ZeroClutter
             tempfolder.Size = new Size(216, 160);
             tempfolder.TabIndex = 0;
             tempfolder.Text = "Clean Temp";
+            tempfolder.Click += Tempfolder_Click;
             // 
             // topbar
             // 
@@ -171,6 +174,16 @@ namespace ZeroClutter
             topbar.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
+        }
+
+        private void Tempfolder_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void Recyclebin_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         ToolStripMenuItem exit, about;
