@@ -30,8 +30,8 @@ namespace ZeroClutter
         /// </summary>
         private void InitializeComponent()
         {
-
-           
+            saver = new Button();
+            eventviewer = new Button();
             lanimations = new Button();
             programs = new Button();
             recyclebin = new Button();
@@ -42,6 +42,28 @@ namespace ZeroClutter
             about = new ToolStripMenuItem();
             topbar.SuspendLayout();
             SuspendLayout();
+            // 
+            // saver
+            // 
+            saver.FlatStyle = FlatStyle.System;
+            saver.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            saver.Location = new Point(482, 265);
+            saver.Name = "saver";
+            saver.Padding = new Padding(10);
+            saver.Size = new Size(190, 42);
+            saver.TabIndex = 1;
+            saver.Text = "Save Report";
+            // 
+            // eventviewer
+            // 
+            eventviewer.FlatStyle = FlatStyle.System;
+            eventviewer.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            eventviewer.Location = new Point(445, 203);
+            eventviewer.Name = "eventviewer";
+            eventviewer.Padding = new Padding(10);
+            eventviewer.Size = new Size(190, 50);
+            eventviewer.TabIndex = 1;
+            eventviewer.Text = "Event Viewer";
             // 
             // lanimations
             // 
@@ -133,7 +155,9 @@ namespace ZeroClutter
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             ClientSize = new Size(684, 361);
+            Controls.Add(saver);
             Controls.Add(tempfolder);
+            Controls.Add(eventviewer);
             Controls.Add(lanimations);
             Controls.Add(programs);
             Controls.Add(recyclebin);
@@ -150,7 +174,7 @@ namespace ZeroClutter
         }
 
         ToolStripMenuItem exit, about;
-        Button prefetch, tempfolder, recyclebin, programs, lanimations;
+        Button prefetch, tempfolder, recyclebin, programs, lanimations, eventviewer, saver;
         ToolStrip topbar;
         
     }
