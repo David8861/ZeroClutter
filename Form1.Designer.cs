@@ -30,6 +30,8 @@ namespace ZeroClutter
         /// </summary>
         private void InitializeComponent()
         {
+
+            programs = new Button();
             recyclebin = new Button();
             prefetch = new Button();
             tempfolder = new Button();
@@ -39,14 +41,25 @@ namespace ZeroClutter
             topbar.SuspendLayout();
             SuspendLayout();
             // 
+            // recyclebin
+            // 
+            recyclebin.FlatStyle = FlatStyle.System;
+            recyclebin.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            recyclebin.Location = new Point(452, 30);
+            recyclebin.Name = "recyclebin";
+            recyclebin.Padding = new Padding(10);
+            recyclebin.Size = new Size(220, 160);
+            recyclebin.TabIndex = 1;
+            recyclebin.Text = "Clean Recycle Bin";
+            // 
             // prefetch
             // 
             prefetch.FlatStyle = FlatStyle.System;
             prefetch.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            prefetch.Location = new Point(50, 30);
+            prefetch.Location = new Point(12, 30);
             prefetch.Name = "prefetch";
             prefetch.Padding = new Padding(10);
-            prefetch.Size = new Size(193, 169);
+            prefetch.Size = new Size(215, 160);
             prefetch.TabIndex = 0;
             prefetch.Text = "Clean Prefetch";
             prefetch.Click += prefetch_Click;
@@ -55,10 +68,10 @@ namespace ZeroClutter
             // 
             tempfolder.FlatStyle = FlatStyle.System;
             tempfolder.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tempfolder.Location = new Point(249, 30);
+            tempfolder.Location = new Point(233, 30);
             tempfolder.Name = "tempfolder";
             tempfolder.Padding = new Padding(10);
-            tempfolder.Size = new Size(212, 169);
+            tempfolder.Size = new Size(216, 160);
             tempfolder.TabIndex = 0;
             tempfolder.Text = "Clean Temp";
             // 
@@ -66,11 +79,11 @@ namespace ZeroClutter
             // 
             topbar.Dock = DockStyle.Bottom;
             topbar.Items.AddRange(new ToolStripItem[] { exit, about });
-            topbar.Location = new Point(0, 364);
+            topbar.Location = new Point(0, 325);
             topbar.Margin = new Padding(15);
             topbar.Name = "topbar";
             topbar.Padding = new Padding(5, 10, 10, 5);
-            topbar.Size = new Size(700, 36);
+            topbar.Size = new Size(684, 36);
             topbar.TabIndex = 1;
             // 
             // exit
@@ -95,13 +108,14 @@ namespace ZeroClutter
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
-            ClientSize = new Size(700, 400);
+            ClientSize = new Size(684, 361);
             Controls.Add(tempfolder);
+            Controls.Add(programs);
             Controls.Add(recyclebin);
             Controls.Add(prefetch);
             Controls.Add(topbar);
-            MinimumSize = new Size(700, 400);
             MaximumSize = new Size(700, 400);
+            MinimumSize = new Size(700, 400);
             Name = "Form1";
             Text = "Zero Clutter - Lightweight x64/86 cleaner";
             topbar.ResumeLayout(false);
@@ -111,7 +125,7 @@ namespace ZeroClutter
         }
 
         ToolStripMenuItem exit, about;
-        Button prefetch, tempfolder, recyclebin;
+        Button prefetch, tempfolder, recyclebin, programs;
         ToolStrip topbar;
         
     }
