@@ -32,6 +32,7 @@ namespace ZeroClutter
         {
             prefetch = new Button();
             topbar = new ToolStrip();
+            exit = new ToolStripMenuItem();
             about = new ToolStripMenuItem();
             topbar.SuspendLayout();
             SuspendLayout();
@@ -51,13 +52,20 @@ namespace ZeroClutter
             // topbar
             // 
             topbar.Dock = DockStyle.Bottom;
-            topbar.Items.AddRange(new ToolStripItem[] { about });
+            topbar.Items.AddRange(new ToolStripItem[] { exit, about });
             topbar.Location = new Point(0, 364);
             topbar.Margin = new Padding(15);
             topbar.Name = "topbar";
             topbar.Padding = new Padding(5, 10, 10, 5);
             topbar.Size = new Size(700, 36);
             topbar.TabIndex = 1;
+
+            exit.Alignment = ToolStripItemAlignment.Left;
+            exit.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            exit.Name = "exit";
+            exit.Size = new Size(55, 21);
+            exit.Text = "Exit";
+            exit.Click += exit_Click;
             // 
             // about
             // 
@@ -85,7 +93,7 @@ namespace ZeroClutter
             PerformLayout();
         }
 
-        ToolStripMenuItem about;
+        ToolStripMenuItem exit, about;
         Button prefetch;
         ToolStrip topbar;
         

@@ -33,20 +33,22 @@ namespace ZeroClutter
             this.Visible = true;
             form.Controls.Add(finishedprefetch);
 
-            finishedprefetch.Text = "Done";
+            finishedprefetch.Text = "Done!";
             finishedprefetch.TextAlign = HorizontalAlignment.Center;
             finishedprefetch.Enabled = true;
             finishedprefetch.Size = new Size(90, 60);
-            finishedprefetch.BorderStyle = BorderStyle.None;
+            finishedprefetch.BorderStyle = BorderStyle.FixedSingle;
             finishedprefetch.TabIndex = 0;
             finishedprefetch.ReadOnly = true;
 
-            
-
-
             prefetch.Enabled = false;
 
-            
+        }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+
+            Application.Exit();
 
         }
         private void about_Click(object sender, EventArgs e)
