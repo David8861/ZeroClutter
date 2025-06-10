@@ -29,18 +29,26 @@
         private void InitializeComponent()
         {
 
+            Button prefetch = new Button();
+            topbar = new ToolStrip();
 
 
 
-
+            prefetch.Size = new Size(150, 80);
+            prefetch.Text = "Clean Prefetch";
+            prefetch.Name = "Prefetch";
+            prefetch.Padding = new Padding(5,5,5,5);
 
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(850, 500);
+            this.ClientSize = new System.Drawing.Size(700, 400);
             this.Text = "Zero Clutter";
             this.AutoSize = true;
+            Controls.Add(prefetch);
+            this.ResumeLayout(false);
         }
 
-        
+        Button prefetch;
+        ToolStrip topbar;
     }
 }
