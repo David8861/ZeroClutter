@@ -17,15 +17,36 @@ namespace ZeroClutter
 
             foreach (string filePath in filePaths)
             {
+
                 File.Delete(filePath);
+
             }
 
-            Form messenger = new Form();
-            messenger.ShowDialog();
-            messenger.Text = "Done!";
+            TextBox finishedprefetch = new TextBox();
+            Form form = new Form();
+            form.ShowInTaskbar = false;
+            form.Show();
             
-            messenger.Enabled = true;
-            messenger.Visible = true;
+            form.Name = "Done";
+            form.Text = "Done";
+            form.Size = new Size(100, 75);
+            this.Visible = true;
+            form.Controls.Add(finishedprefetch);
+
+            finishedprefetch.Text = "Done";
+            finishedprefetch.TextAlign = HorizontalAlignment.Center;
+            finishedprefetch.Enabled = true;
+            finishedprefetch.Size = new Size(90, 60);
+            finishedprefetch.BorderStyle = BorderStyle.None;
+            finishedprefetch.TabIndex = 0;
+            finishedprefetch.ReadOnly = true;
+
+            
+
+
+            prefetch.Enabled = false;
+
+            
 
         }
         private void about_Click(object sender, EventArgs e)
