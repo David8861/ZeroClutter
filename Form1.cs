@@ -22,27 +22,7 @@ namespace ZeroClutter
 
             }
 
-            TextBox finishedprefetch = new TextBox();
-            Form form = new Form();
-            form.ShowInTaskbar = false;
-            form.Show();
-            
-            form.Name = "Done";
-            form.Text = "Done";
-            form.Size = new Size(100, 75);
-            this.Visible = true;
-            form.Controls.Add(finishedprefetch);
-
-            finishedprefetch.Text = "Done!";
-            finishedprefetch.TextAlign = HorizontalAlignment.Center;
-            finishedprefetch.Enabled = true;
-            finishedprefetch.Size = new Size(90, 60);
-            finishedprefetch.BorderStyle = BorderStyle.FixedSingle;
-            finishedprefetch.TabIndex = 0;
-            finishedprefetch.ReadOnly = true;
-
-            prefetch.Enabled = false;
-
+            prefetch.Enabled = false; prefetch.ResetText(); prefetch.Text = "Done";
         }
 
         private void exit_Click(object sender, EventArgs e)
