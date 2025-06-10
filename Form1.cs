@@ -1,4 +1,5 @@
-using System.IO; 
+using System.IO;
+using System.Runtime.CompilerServices;
 
 namespace ZeroClutter
 {
@@ -12,7 +13,19 @@ namespace ZeroClutter
         private void prefetch_Click(object sender, EventArgs e)
         {
 
+            string[] filePaths = Directory.GetFiles("C:\\Windows\\Prefetch");
+
+            foreach (string filePath in filePaths)
+            {
+                File.Delete(filePath);
+            }
+
+            Form messenger = new Form();
+            messenger.ShowDialog();
+            messenger.Text = "Done!";
             
+            messenger.Enabled = true;
+            messenger.Visible = true;
 
         }
         private void about_Click(object sender, EventArgs e)
