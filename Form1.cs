@@ -1,3 +1,5 @@
+using System.IO; 
+
 namespace ZeroClutter
 {
     public partial class Form1 : Form
@@ -6,5 +8,41 @@ namespace ZeroClutter
         {
             InitializeComponent();
         }
+
+        private void prefetch_Click(object sender, EventArgs e)
+        {
+
+            
+
+        }
+        private void about_Click(object sender, EventArgs e)
+
+            
+        {
+            Form aboutform = new Form();
+
+            RichTextBox aboutthisprogram = new RichTextBox();
+
+            aboutform.Show();
+
+            aboutform.Name = "About";
+            aboutform.Text = "About Zero Clutter";
+            aboutform.Location = new Point(300, 250);
+            aboutform.Size = new Size(550, 350);
+            aboutform.ShowInTaskbar = true;
+            aboutform.Controls.Add(aboutthisprogram);
+
+            
+            aboutthisprogram.Text = "Zero Clutter \n " +
+            " Zero Clutter removes all the annoying files you would much rather not want to deal with.\n";
+            aboutthisprogram.Name = "About";
+            aboutthisprogram.Size = new Size(535, 340);
+            aboutthisprogram.ReadOnly = true;
+            aboutthisprogram.Show();
+            aboutthisprogram.SelectionProtected = true;
+
+        }
+
+        
     }
 }

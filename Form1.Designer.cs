@@ -32,23 +32,21 @@ namespace ZeroClutter
         {
             prefetch = new Button();
             topbar = new ToolStrip();
-            
             about = new ToolStripMenuItem();
             topbar.SuspendLayout();
             SuspendLayout();
             // 
             // prefetch
             // 
-            
             prefetch.FlatStyle = FlatStyle.System;
             prefetch.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             prefetch.Location = new Point(50, 30);
             prefetch.Name = "prefetch";
-            prefetch.Padding = new Padding(10, 10, 10, 10);
+            prefetch.Padding = new Padding(10);
             prefetch.Size = new Size(180, 120);
             prefetch.TabIndex = 0;
             prefetch.Text = "Clean Prefetch";
-            
+            prefetch.Click += prefetch_Click;
             // 
             // topbar
             // 
@@ -60,7 +58,6 @@ namespace ZeroClutter
             topbar.Padding = new Padding(5, 10, 10, 5);
             topbar.Size = new Size(700, 36);
             topbar.TabIndex = 1;
-            
             // 
             // about
             // 
@@ -69,16 +66,17 @@ namespace ZeroClutter
             about.Name = "about";
             about.Size = new Size(55, 21);
             about.Text = "About";
+            about.Click += about_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
-            this.MinimumSize = new Size(700, 400);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             ClientSize = new Size(700, 400);
             Controls.Add(prefetch);
             Controls.Add(topbar);
+            MinimumSize = new Size(700, 400);
             Name = "Form1";
             Text = "Zero Clutter";
             topbar.ResumeLayout(false);
