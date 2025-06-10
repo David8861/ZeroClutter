@@ -30,7 +30,9 @@ namespace ZeroClutter
         /// </summary>
         private void InitializeComponent()
         {
+            recyclebin = new Button();
             prefetch = new Button();
+            tempfolder = new Button();
             topbar = new ToolStrip();
             exit = new ToolStripMenuItem();
             about = new ToolStripMenuItem();
@@ -44,10 +46,21 @@ namespace ZeroClutter
             prefetch.Location = new Point(50, 30);
             prefetch.Name = "prefetch";
             prefetch.Padding = new Padding(10);
-            prefetch.Size = new Size(180, 120);
+            prefetch.Size = new Size(193, 169);
             prefetch.TabIndex = 0;
             prefetch.Text = "Clean Prefetch";
             prefetch.Click += prefetch_Click;
+            // 
+            // tempfolder
+            // 
+            tempfolder.FlatStyle = FlatStyle.System;
+            tempfolder.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tempfolder.Location = new Point(249, 30);
+            tempfolder.Name = "tempfolder";
+            tempfolder.Padding = new Padding(10);
+            tempfolder.Size = new Size(212, 169);
+            tempfolder.TabIndex = 0;
+            tempfolder.Text = "Clean Temp";
             // 
             // topbar
             // 
@@ -59,11 +72,12 @@ namespace ZeroClutter
             topbar.Padding = new Padding(5, 10, 10, 5);
             topbar.Size = new Size(700, 36);
             topbar.TabIndex = 1;
-
-            exit.Alignment = ToolStripItemAlignment.Left;
+            // 
+            // exit
+            // 
             exit.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             exit.Name = "exit";
-            exit.Size = new Size(55, 21);
+            exit.Size = new Size(40, 21);
             exit.Text = "Exit";
             exit.Click += exit_Click;
             // 
@@ -82,11 +96,14 @@ namespace ZeroClutter
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             ClientSize = new Size(700, 400);
+            Controls.Add(tempfolder);
+            Controls.Add(recyclebin);
             Controls.Add(prefetch);
             Controls.Add(topbar);
             MinimumSize = new Size(700, 400);
+            MaximumSize = new Size(700, 400);
             Name = "Form1";
-            Text = "Zero Clutter";
+            Text = "Zero Clutter - Lightweight x64/86 cleaner";
             topbar.ResumeLayout(false);
             topbar.PerformLayout();
             ResumeLayout(false);
@@ -94,7 +111,7 @@ namespace ZeroClutter
         }
 
         ToolStripMenuItem exit, about;
-        Button prefetch;
+        Button prefetch, tempfolder, recyclebin;
         ToolStrip topbar;
         
     }
