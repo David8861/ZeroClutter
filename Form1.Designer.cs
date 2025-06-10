@@ -31,6 +31,8 @@ namespace ZeroClutter
         private void InitializeComponent()
         {
 
+           
+            lanimations = new Button();
             programs = new Button();
             recyclebin = new Button();
             prefetch = new Button();
@@ -40,6 +42,28 @@ namespace ZeroClutter
             about = new ToolStripMenuItem();
             topbar.SuspendLayout();
             SuspendLayout();
+            // 
+            // lanimations
+            // 
+            lanimations.FlatStyle = FlatStyle.System;
+            lanimations.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lanimations.Location = new Point(244, 203);
+            lanimations.Name = "lanimations";
+            lanimations.Padding = new Padding(10);
+            lanimations.Size = new Size(195, 104);
+            lanimations.TabIndex = 1;
+            lanimations.Text = "Limit Animations";
+            // 
+            // programs
+            // 
+            programs.FlatStyle = FlatStyle.System;
+            programs.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            programs.Location = new Point(23, 203);
+            programs.Name = "programs";
+            programs.Padding = new Padding(10);
+            programs.Size = new Size(195, 104);
+            programs.TabIndex = 1;
+            programs.Text = "Installed Programs";
             // 
             // recyclebin
             // 
@@ -110,6 +134,7 @@ namespace ZeroClutter
             AutoSize = true;
             ClientSize = new Size(684, 361);
             Controls.Add(tempfolder);
+            Controls.Add(lanimations);
             Controls.Add(programs);
             Controls.Add(recyclebin);
             Controls.Add(prefetch);
@@ -125,7 +150,7 @@ namespace ZeroClutter
         }
 
         ToolStripMenuItem exit, about;
-        Button prefetch, tempfolder, recyclebin, programs;
+        Button prefetch, tempfolder, recyclebin, programs, lanimations;
         ToolStrip topbar;
         
     }
