@@ -83,14 +83,15 @@ namespace ZeroClutter
 
                 Directory.CreateDirectory("C:\\ZeroClutter");
 
-                File.WriteAllText("C:\\ZeroClutter\\SaveReport.txt", "You cleaned the following: ");
+                
+                File.WriteAllText("C:\\ZeroClutter\\SaveReport.txt", "You cleaned Prefetch, Temp, and Recycle Bin.");
             }
             else            
             {
 
                 Directory.CreateDirectory("C:\\ZeroClutter");
                 
-                File.WriteAllText("C:\\ZeroClutter\\SaveReport.txt", "You cleaned the following: ");
+                File.WriteAllText("C:\\ZeroClutter\\SaveReport.txt", "You cleaned Prefetch, Temp, and Recycle Bin.");
             }
 
         }
@@ -117,19 +118,21 @@ namespace ZeroClutter
             aboutform.Text = "About Zero Clutter";
             aboutform.Location = new Point(300, 250);
             aboutform.Size = new Size(550, 350);
+            aboutform.MaximumSize = new Size(550, 350);
+            aboutform.MinimumSize = new Size(550, 350);
             aboutform.ShowInTaskbar = true;
             aboutform.Controls.Add(aboutthisprogram);
 
-            
-            aboutthisprogram.Text = "Zero Clutter \n " +
-            "Zero Clutter removes many of the files you would much rather not want to deal with, with a few clicks." +
-            "\bVisit my Github for more: github.com/David8861.\n";
+           
+            aboutthisprogram.Text = "Zero Clutter\n " +
+            "\nZero Clutter is a lightweight, simple file remover tool (with some built-in maintenance functions). Zero Clutter enables you to jump to important applications, clean files, and save a report to your drive.\n" +
+            "\nVisit my Github for more: github.com/David8861.\n";
+            aboutthisprogram.WordWrap = true;
             aboutthisprogram.Name = "About";
             aboutthisprogram.Size = new Size(535, 340);
             aboutthisprogram.ReadOnly = true;
-            aboutthisprogram.Show();
             aboutthisprogram.SelectionProtected = true;
-
+            aboutthisprogram.Show();
         }
 
         
