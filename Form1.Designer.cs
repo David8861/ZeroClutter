@@ -86,7 +86,9 @@ namespace ZeroClutter
             programs.Padding = new Padding(10);
             programs.Size = new Size(195, 104);
             programs.TabIndex = 1;
-            programs.Text = "Installed Programs";
+            programs.Text = "Installed Programs\n" +
+            "'Press uninstall a program'";
+            programs.Click += programs_Click;
             // 
             // recyclebin
             // 
@@ -98,7 +100,7 @@ namespace ZeroClutter
             recyclebin.Size = new Size(220, 160);
             recyclebin.TabIndex = 1;
             recyclebin.Text = "Clean Recycle Bin";
-            recyclebin.Click += Recyclebin_Click;
+            recyclebin.Click += recyclebin_Click;
             // 
             // prefetch
             // 
@@ -122,7 +124,7 @@ namespace ZeroClutter
             tempfolder.Size = new Size(216, 160);
             tempfolder.TabIndex = 0;
             tempfolder.Text = "Clean Temp";
-            tempfolder.Click += Tempfolder_Click;
+            tempfolder.Click += tempfolder_Click;
             // 
             // topbar
             // 
@@ -176,15 +178,7 @@ namespace ZeroClutter
             PerformLayout();
         }
 
-        private void Tempfolder_Click(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
-        private void Recyclebin_Click(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
+        
 
         ToolStripMenuItem exit, about;
         Button prefetch, tempfolder, recyclebin, programs, lanimations, eventviewer, saver;

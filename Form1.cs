@@ -1,3 +1,5 @@
+using Microsoft.VisualBasic;
+using System.Diagnostics;
 using System.IO;
 using System.Runtime.CompilerServices;
 
@@ -27,26 +29,38 @@ namespace ZeroClutter
         }
         private void tempfolder_Click(object sender, EventArgs e)
         {
-            string[] filePaths = Directory.GetFiles("");
+            string[] filePaths = Directory.GetFiles("C:\\Windows\\Temp");
 
             foreach (string filePath in filePaths)
             {
                 File.Delete(filePath);
 
             }
+
+            tempfolder.Enabled = false; tempfolder.ResetText(); tempfolder.Text = "Done";
 
 
         }
         private void recyclebin_Click(object sender, EventArgs e)
         {
-            string[] filePaths = Directory.GetFiles("");
+            string[] filePaths = Directory.GetFiles("C:\\$Recycle.Bin");
+            
 
             foreach (string filePath in filePaths)
             {
                 File.Delete(filePath);
-            }
-        }
 
+            }
+
+            recyclebin.Enabled = false; recyclebin.ResetText(); recyclebin.Text = "Done";
+
+        }
+        private void programs_Click(object sender, EventArgs e)
+        {
+
+            System.Diagnostics.Process.Start("Control.exe");
+
+        }
 
 
 
