@@ -32,7 +32,6 @@ namespace ZeroClutter
         private void InitializeComponent()
         {
             eventviewer = new Button();
-            mydownloads = new Button();
             programs = new Button();
             recyclebin = new Button();
             prefetch = new Button();
@@ -48,33 +47,21 @@ namespace ZeroClutter
             // 
             eventviewer.FlatStyle = FlatStyle.System;
             eventviewer.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            eventviewer.Location = new Point(452, 203);
+            eventviewer.Location = new Point(233, 203);
             eventviewer.Name = "eventviewer";
             eventviewer.Padding = new Padding(10);
-            eventviewer.Size = new Size(220, 58);
+            eventviewer.Size = new Size(216, 104);
             eventviewer.TabIndex = 1;
             eventviewer.Text = "Event Viewer";
-            // 
-            // mydownloads
-            // 
-            mydownloads.FlatStyle = FlatStyle.System;
-            mydownloads.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            mydownloads.Location = new Point(245, 203);
-            mydownloads.Name = "mydownloads";
-            mydownloads.Padding = new Padding(10);
-            mydownloads.Size = new Size(190, 104);
-            mydownloads.TabIndex = 1;
-            mydownloads.Text = "Clear Downloads";
-            mydownloads.Click += mydownloads_Click;
             // 
             // programs
             // 
             programs.FlatStyle = FlatStyle.System;
             programs.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            programs.Location = new Point(23, 203);
+            programs.Location = new Point(12, 203);
             programs.Name = "programs";
             programs.Padding = new Padding(10);
-            programs.Size = new Size(195, 104);
+            programs.Size = new Size(215, 104);
             programs.TabIndex = 1;
             programs.Text = "Uninstall a Program\n";
             programs.Click += programs_Click;
@@ -147,10 +134,10 @@ namespace ZeroClutter
             // 
             saver.FlatStyle = FlatStyle.System;
             saver.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            saver.Location = new Point(452, 267);
+            saver.Location = new Point(452, 203);
             saver.Name = "saver";
             saver.Padding = new Padding(10);
-            saver.Size = new Size(220, 40);
+            saver.Size = new Size(220, 104);
             saver.TabIndex = 1;
             saver.Text = "Save Report";
             // 
@@ -163,11 +150,11 @@ namespace ZeroClutter
             Controls.Add(saver);
             Controls.Add(tempfolder);
             Controls.Add(eventviewer);
-            Controls.Add(mydownloads);
             Controls.Add(programs);
             Controls.Add(recyclebin);
             Controls.Add(prefetch);
             Controls.Add(topbar);
+            Location = new Point(960, 540);
             MaximumSize = new Size(700, 400);
             MinimumSize = new Size(700, 400);
             Name = "Form1";
@@ -181,7 +168,7 @@ namespace ZeroClutter
 
 
         ToolStripMenuItem exit, about;
-        Button prefetch, tempfolder, recyclebin, programs, eventviewer, saver, mydownloads;
+        Button prefetch, tempfolder, recyclebin, programs, eventviewer, saver; 
         ToolStrip topbar;
         
     }
