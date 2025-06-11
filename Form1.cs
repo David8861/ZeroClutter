@@ -61,7 +61,39 @@ namespace ZeroClutter
             System.Diagnostics.Process.Start("Control.exe");
 
         }
-        
+        private void mydownloads_Click(object sender, EventArgs e)
+        {
+            Form downloadquestion = new Form();
+            
+            Button accept = new Button();
+            Button cancel = new Button();
+
+            downloadquestion.Name = "Clear Downloads?";
+            downloadquestion.Text = "Clear Downloads?";
+            downloadquestion.Size = new Size(280, 100);
+            downloadquestion.Location = new Point(125, 100);
+            downloadquestion.Enabled = true;
+            downloadquestion.MaximumSize = new Size(280, 100);
+            downloadquestion.MinimumSize = new Size(280, 100);
+            downloadquestion.Controls.Add(accept);
+            downloadquestion.Controls.Add(cancel);
+            
+            this.AcceptButton = accept;
+            accept.Location = new Point(35, 5);
+            accept.Size = new Size(100, 45);
+            accept.Enabled = true;
+            accept.Visible = true;
+            accept.Text = "Accept";
+
+            this.CancelButton = cancel;
+            cancel.Location = new Point(135, 5);
+            cancel.Size = new Size(100, 45);
+            cancel.Enabled = true;
+            cancel.Visible = true;
+            cancel.Text = "Cancel";
+
+            downloadquestion.Show();
+        }
 
 
         private void exit_Click(object sender, EventArgs e)
