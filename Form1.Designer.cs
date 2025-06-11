@@ -53,6 +53,7 @@ namespace ZeroClutter
             eventviewer.Size = new Size(216, 104);
             eventviewer.TabIndex = 1;
             eventviewer.Text = "Event Viewer";
+            eventviewer.Click += eventviewer_Click;
             // 
             // programs
             // 
@@ -140,6 +141,7 @@ namespace ZeroClutter
             saver.Size = new Size(220, 104);
             saver.TabIndex = 1;
             saver.Text = "Save Report";
+            saver.Click += saver_Click;
             // 
             // Form1
             // 

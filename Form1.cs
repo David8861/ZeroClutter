@@ -64,8 +64,20 @@ namespace ZeroClutter
             System.Diagnostics.Process.Start("Control.exe");
 
         }
-       
+       private void eventviewer_Click(object sender, EventArgs e)
+        {
+
+            System.Diagnostics.Process.Start("C:\\Windows\\System32\\eventvwr.exe");
+
+        }
         
+        private void saver_Click(object sender, EventArgs e)
+        {
+
+
+
+        }
+
    
 
         private void exit_Click(object sender, EventArgs e)
