@@ -74,7 +74,24 @@ namespace ZeroClutter
         private void saver_Click(object sender, EventArgs e)
         {
 
+            
+            if (Directory.Exists("C:\\ZeroClutter"))
+            {
+                File.Delete("C:\\ZeroClutter\\SaveReport.txt");
 
+                Directory.Delete("C:\\ZeroClutter");
+
+                Directory.CreateDirectory("C:\\ZeroClutter");
+
+                File.WriteAllText("C:\\ZeroClutter\\SaveReport.txt", "You cleaned the following: ");
+            }
+            else            
+            {
+
+                Directory.CreateDirectory("C:\\ZeroClutter");
+                
+                File.WriteAllText("C:\\ZeroClutter\\SaveReport.txt", "You cleaned the following: ");
+            }
 
         }
 
