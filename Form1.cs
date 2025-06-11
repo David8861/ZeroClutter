@@ -1,5 +1,6 @@
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.ApplicationServices;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
 using System.Runtime.CompilerServices;
@@ -27,20 +28,23 @@ namespace ZeroClutter
 
             }
 
-            prefetch.Enabled = false; prefetch.ResetText(); prefetch.Text = "Done";
+            prefetch.Enabled = false; prefetch.ResetText(); prefetch.Text = "Cleaned";
 
         }
         private void tempfolder_Click(object sender, EventArgs e)
         {
-            string[] filePaths = Directory.GetFiles("C:\\Windows\\Temp");
 
-            foreach (string filePath in filePaths)
+            if (Directory.Exists("C:\\Windows\\Temp"))
             {
-                File.Delete(filePath);
+                string[] DirPaths = Directory.GetDirectories("C:\\Windows\\Temp");
 
+                foreach (string DirPath in DirPaths)
+                {
+                    File.Delete(DirPath);
+                }
             }
-
-            tempfolder.Enabled = false; tempfolder.ResetText(); tempfolder.Text = "Done";
+            
+            tempfolder.Enabled = false; tempfolder.ResetText(); tempfolder.Text = "Cleaned";
 
 
         }
@@ -55,7 +59,7 @@ namespace ZeroClutter
 
             }
 
-            recyclebin.Enabled = false; recyclebin.ResetText(); recyclebin.Text = "Done";
+            recyclebin.Enabled = false; recyclebin.ResetText(); recyclebin.Text = "Cleaned";
 
         }
         private void programs_Click(object sender, EventArgs e)
@@ -85,6 +89,8 @@ namespace ZeroClutter
 
                 
                 File.WriteAllText("C:\\ZeroClutter\\SaveReport.txt", "You cleaned Prefetch, Temp, and Recycle Bin.");
+
+                saver.Enabled = false; saver.ResetText(); saver.Text = "Saved";
             }
             else            
             {
@@ -92,6 +98,8 @@ namespace ZeroClutter
                 Directory.CreateDirectory("C:\\ZeroClutter");
                 
                 File.WriteAllText("C:\\ZeroClutter\\SaveReport.txt", "You cleaned Prefetch, Temp, and Recycle Bin.");
+
+                saver.Enabled = false; saver.ResetText(); saver.Text = "Saved";
             }
 
         }
