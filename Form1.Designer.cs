@@ -32,7 +32,7 @@ namespace ZeroClutter
         {
             
             eventviewer = new Button();
-            lanimations = new Button();
+            
             programs = new Button();
             recyclebin = new Button();
             prefetch = new Button();
@@ -65,17 +65,7 @@ namespace ZeroClutter
             eventviewer.Size = new Size(220, 58);
             eventviewer.TabIndex = 1;
             eventviewer.Text = "Event Viewer";
-            // 
-            // lanimations
-            // 
-            lanimations.FlatStyle = FlatStyle.System;
-            lanimations.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lanimations.Location = new Point(244, 203);
-            lanimations.Name = "lanimations";
-            lanimations.Padding = new Padding(10);
-            lanimations.Size = new Size(195, 104);
-            lanimations.TabIndex = 1;
-            lanimations.Text = "Limit Animations";
+            
             // 
             // programs
             // 
@@ -163,7 +153,7 @@ namespace ZeroClutter
             Controls.Add(saver);
             Controls.Add(tempfolder);
             Controls.Add(eventviewer);
-            Controls.Add(lanimations);
+            
             Controls.Add(programs);
             Controls.Add(recyclebin);
             Controls.Add(prefetch);
@@ -181,7 +171,7 @@ namespace ZeroClutter
         
 
         ToolStripMenuItem exit, about;
-        Button prefetch, tempfolder, recyclebin, programs, lanimations, eventviewer, saver;
+        Button prefetch, tempfolder, recyclebin, programs, eventviewer, saver;
         ToolStrip topbar;
         
     }
