@@ -3,7 +3,10 @@ using Microsoft.VisualBasic.ApplicationServices;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
+using System.Resources;
 using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+using ZeroClutter.Properties;
 
 namespace ZeroClutter
 {
@@ -14,6 +17,9 @@ namespace ZeroClutter
         public Form1()
         {
             InitializeComponent();
+
+            
+
         }
 
         private void prefetch_Click(object sender, EventArgs e)
@@ -50,8 +56,7 @@ namespace ZeroClutter
         }
         private void recyclebin_Click(object sender, EventArgs e)
         {
-            string[] filePaths = Directory.GetFiles("C:\\$Recycle.Bin");
-            
+            string[] filePaths = Directory.GetFiles("C:\\$RECYCLE.BIN");
 
             foreach (string filePath in filePaths)
             {
@@ -114,7 +119,7 @@ namespace ZeroClutter
         }
         private void about_Click(object sender, EventArgs e)
 
-            
+
         {
             Form aboutform = new Form();
 
@@ -122,8 +127,10 @@ namespace ZeroClutter
 
             aboutform.Show();
 
+            aboutform.ShowIcon = true;
+            aboutform.ShowInTaskbar = true;
             aboutform.Name = "About";
-            aboutform.Text = "About Zero Clutter";
+            aboutform.Text = "About";
             aboutform.Location = new Point(300, 250);
             aboutform.Size = new Size(550, 350);
             aboutform.MaximumSize = new Size(550, 350);
@@ -131,16 +138,17 @@ namespace ZeroClutter
             aboutform.ShowInTaskbar = true;
             aboutform.Controls.Add(aboutthisprogram);
 
-           
+
             aboutthisprogram.Text = "Zero Clutter\n " +
             "\nZero Clutter is a lightweight, simple file remover tool (with some built-in maintenance functions). Zero Clutter enables you to jump to important applications, clean files, and save a report to your drive.\n" +
-            "\nVisit my Github for more: github.com/David8861.\n";
+            "\nZeroClutter works in both x64/x86 architecture.\n" + "\nVisit my Github for more: github.com/David8861.\n";
             aboutthisprogram.WordWrap = true;
             aboutthisprogram.Name = "About";
             aboutthisprogram.Size = new Size(535, 340);
             aboutthisprogram.ReadOnly = true;
             aboutthisprogram.SelectionProtected = true;
             aboutthisprogram.Show();
+            
         }
 
         

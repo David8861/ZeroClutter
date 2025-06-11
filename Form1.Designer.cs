@@ -31,6 +31,8 @@ namespace ZeroClutter
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
             eventviewer = new Button();
             programs = new Button();
             recyclebin = new Button();
@@ -129,6 +131,7 @@ namespace ZeroClutter
             about.Name = "about";
             about.Size = new Size(55, 21);
             about.Text = "About";
+            
             about.Click += about_Click;
             // 
             // saver
@@ -156,11 +159,12 @@ namespace ZeroClutter
             Controls.Add(recyclebin);
             Controls.Add(prefetch);
             Controls.Add(topbar);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Location = new Point(960, 540);
             MaximumSize = new Size(700, 400);
             MinimumSize = new Size(700, 400);
             Name = "Form1";
-            Text = "Zero Clutter - Lightweight x64/86 cleaner";
+            Text = "Zero Clutter - lightweight file cleaner";
             topbar.ResumeLayout(false);
             topbar.PerformLayout();
             ResumeLayout(false);
