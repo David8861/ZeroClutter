@@ -1,24 +1,14 @@
-using Microsoft.VisualBasic;
-using Microsoft.VisualBasic.ApplicationServices;
-using System.ComponentModel;
-using System.Diagnostics;
-using System.IO;
-using System.Resources;
-using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices;
-using ZeroClutter.Properties;
-
 namespace ZeroClutter
 {
     public partial class Form1 : Form
     {
-        
+
 
         public Form1()
         {
             InitializeComponent();
 
-            
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
 
         }
 
@@ -49,7 +39,7 @@ namespace ZeroClutter
                     File.Delete(DirPath);
                 }
             }
-            
+
             tempfolder.Enabled = false; tempfolder.ResetText(); tempfolder.Text = "Cleaned";
 
 
@@ -73,17 +63,17 @@ namespace ZeroClutter
             System.Diagnostics.Process.Start("Control.exe");
 
         }
-       private void eventviewer_Click(object sender, EventArgs e)
+        private void eventviewer_Click(object sender, EventArgs e)
         {
 
             System.Diagnostics.Process.Start("C:\\Windows\\System32\\eventvwr.exe");
 
         }
-        
+
         private void saver_Click(object sender, EventArgs e)
         {
 
-            
+
             if (Directory.Exists("C:\\ZeroClutter"))
             {
                 File.Delete("C:\\ZeroClutter\\SaveReport.txt");
@@ -92,16 +82,16 @@ namespace ZeroClutter
 
                 Directory.CreateDirectory("C:\\ZeroClutter");
 
-                
+
                 File.WriteAllText("C:\\ZeroClutter\\SaveReport.txt", "You cleaned Prefetch, Temp, and Recycle Bin.");
 
                 saver.Enabled = false; saver.ResetText(); saver.Text = "Saved";
             }
-            else            
+            else
             {
 
                 Directory.CreateDirectory("C:\\ZeroClutter");
-                
+
                 File.WriteAllText("C:\\ZeroClutter\\SaveReport.txt", "You cleaned Prefetch, Temp, and Recycle Bin.");
 
                 saver.Enabled = false; saver.ResetText(); saver.Text = "Saved";
@@ -109,7 +99,7 @@ namespace ZeroClutter
 
         }
 
-   
+
 
         private void exit_Click(object sender, EventArgs e)
         {
@@ -126,10 +116,10 @@ namespace ZeroClutter
             RichTextBox aboutthisprogram = new RichTextBox();
 
             aboutform.Show();
-
+            aboutform.Icon = Icon;
             aboutform.ShowIcon = true;
             aboutform.ShowInTaskbar = true;
-            aboutform.Name = "About";
+            aboutform.Name = "about";
             aboutform.Text = "About";
             aboutform.Location = new Point(300, 250);
             aboutform.Size = new Size(550, 350);
@@ -148,9 +138,9 @@ namespace ZeroClutter
             aboutthisprogram.ReadOnly = true;
             aboutthisprogram.SelectionProtected = true;
             aboutthisprogram.Show();
-            
+
         }
 
-        
+
     }
 }
