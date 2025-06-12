@@ -37,13 +37,9 @@ namespace ZeroClutter
             recyclebin = new Button();
             prefetch = new Button();
             tempfolder = new Button();
-            topbar = new ToolStrip();
-            exit = new ToolStripMenuItem();
-            about = new ToolStripMenuItem();
             saver = new Button();
-            button1 = new Button();
-            button2 = new Button();
-            topbar.SuspendLayout();
+            about = new Button();
+            exit = new Button();
             SuspendLayout();
             // 
             // eventviewer
@@ -55,7 +51,7 @@ namespace ZeroClutter
             eventviewer.Location = new Point(233, 203);
             eventviewer.Name = "eventviewer";
             eventviewer.Padding = new Padding(10);
-            eventviewer.Size = new Size(216, 104);
+            eventviewer.Size = new Size(216, 134);
             eventviewer.TabIndex = 1;
             eventviewer.Text = "Event Viewer";
             eventviewer.Click += eventviewer_Click;
@@ -69,7 +65,7 @@ namespace ZeroClutter
             programs.Location = new Point(12, 203);
             programs.Name = "programs";
             programs.Padding = new Padding(10);
-            programs.Size = new Size(215, 104);
+            programs.Size = new Size(215, 134);
             programs.TabIndex = 1;
             programs.Text = "Uninstall a Program\n";
             programs.Click += programs_Click;
@@ -122,40 +118,6 @@ namespace ZeroClutter
             tempfolder.UseVisualStyleBackColor = true;
             tempfolder.Click += tempfolder_Click;
             // 
-            // topbar
-            // 
-            topbar.BackgroundImage = (Image)resources.GetObject("topbar.BackgroundImage");
-            topbar.Dock = DockStyle.Bottom;
-            topbar.Items.AddRange(new ToolStripItem[] { exit, about });
-            topbar.Location = new Point(0, 325);
-            topbar.Margin = new Padding(15);
-            topbar.Name = "topbar";
-            topbar.Padding = new Padding(5, 10, 10, 5);
-            topbar.Size = new Size(684, 36);
-            topbar.TabIndex = 1;
-            // 
-            // exit
-            // 
-            exit.BackgroundImage = (Image)resources.GetObject("exit.BackgroundImage");
-            exit.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            exit.ForeColor = Color.White;
-            exit.Name = "exit";
-            exit.Size = new Size(40, 21);
-            exit.Text = "Exit";
-            exit.Click += exit_Click;
-            // 
-            // about
-            // 
-            about.Alignment = ToolStripItemAlignment.Right;
-            about.BackColor = Color.DimGray;
-            about.BackgroundImage = (Image)resources.GetObject("about.BackgroundImage");
-            about.Font = new Font("Nirmala UI", 9.75F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            about.ForeColor = Color.White;
-            about.Name = "about";
-            about.Size = new Size(55, 21);
-            about.Text = "About";
-            about.Click += about_Click;
-            // 
             // saver
             // 
             saver.BackColor = Color.Transparent;
@@ -167,35 +129,37 @@ namespace ZeroClutter
             saver.Location = new Point(455, 203);
             saver.Name = "saver";
             saver.Padding = new Padding(10);
-            saver.Size = new Size(217, 54);
+            saver.Size = new Size(217, 84);
             saver.TabIndex = 1;
             saver.Text = "Save Report";
             saver.UseVisualStyleBackColor = false;
             saver.Click += saver_Click;
             // 
-            // button1
+            // about
             // 
-            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
-            button1.BackgroundImageLayout = ImageLayout.Stretch;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Location = new Point(455, 263);
-            button1.Name = "button1";
-            button1.Size = new Size(107, 44);
-            button1.TabIndex = 2;
-            button1.Text = "About";
-            button1.UseVisualStyleBackColor = true;
+            about.BackgroundImage = (Image)resources.GetObject("about.BackgroundImage");
+            about.BackgroundImageLayout = ImageLayout.Stretch;
+            about.FlatStyle = FlatStyle.Flat;
+            about.Location = new Point(455, 293);
+            about.Name = "about";
+            about.Size = new Size(107, 44);
+            about.TabIndex = 2;
+            about.Text = "About";
+            about.UseVisualStyleBackColor = true;
+            about.Click += about_Click;
             // 
-            // button2
+            // exit
             // 
-            button2.BackgroundImage = (Image)resources.GetObject("button2.BackgroundImage");
-            button2.BackgroundImageLayout = ImageLayout.Stretch;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Location = new Point(568, 263);
-            button2.Name = "button2";
-            button2.Size = new Size(104, 44);
-            button2.TabIndex = 3;
-            button2.Text = "Exit";
-            button2.UseVisualStyleBackColor = true;
+            exit.BackgroundImage = (Image)resources.GetObject("exit.BackgroundImage");
+            exit.BackgroundImageLayout = ImageLayout.Stretch;
+            exit.FlatStyle = FlatStyle.Flat;
+            exit.Location = new Point(568, 293);
+            exit.Name = "exit";
+            exit.Size = new Size(104, 44);
+            exit.TabIndex = 3;
+            exit.Text = "Exit";
+            exit.UseVisualStyleBackColor = true;
+            exit.Click += exit_Click;
             // 
             // Form1
             // 
@@ -205,33 +169,27 @@ namespace ZeroClutter
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(684, 361);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(exit);
+            Controls.Add(about);
             Controls.Add(saver);
             Controls.Add(tempfolder);
             Controls.Add(eventviewer);
             Controls.Add(programs);
             Controls.Add(recyclebin);
             Controls.Add(prefetch);
-            Controls.Add(topbar);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Location = new Point(960, 540);
             MaximumSize = new Size(700, 400);
             MinimumSize = new Size(700, 400);
             Name = "Form1";
             Text = "Zero Clutter";
-            topbar.ResumeLayout(false);
-            topbar.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
 
 
-        ToolStripMenuItem exit, about;
         Button prefetch, tempfolder, recyclebin, programs, eventviewer, saver; 
-        ToolStrip topbar;
-        private Button button1;
-        private Button button2;
+        private Button about, exit;
+        
     }
 }
