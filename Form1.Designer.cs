@@ -47,7 +47,7 @@ namespace ZeroClutter
             // eventviewer
             // 
             eventviewer.BackgroundImage = (Image)resources.GetObject("eventviewer.BackgroundImage");
-            eventviewer.BackgroundImageLayout = ImageLayout.None;
+            eventviewer.BackgroundImageLayout = ImageLayout.Stretch;
             eventviewer.FlatStyle = FlatStyle.Flat;
             eventviewer.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             eventviewer.Location = new Point(233, 203);
@@ -61,7 +61,7 @@ namespace ZeroClutter
             // programs
             // 
             programs.BackgroundImage = (Image)resources.GetObject("programs.BackgroundImage");
-            programs.BackgroundImageLayout = ImageLayout.None;
+            programs.BackgroundImageLayout = ImageLayout.Stretch;
             programs.FlatStyle = FlatStyle.Flat;
             programs.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             programs.Location = new Point(12, 203);
@@ -76,7 +76,7 @@ namespace ZeroClutter
             // 
             recyclebin.BackColor = Color.Transparent;
             recyclebin.BackgroundImage = (Image)resources.GetObject("recyclebin.BackgroundImage");
-            recyclebin.BackgroundImageLayout = ImageLayout.None;
+            recyclebin.BackgroundImageLayout = ImageLayout.Stretch;
             recyclebin.FlatStyle = FlatStyle.Flat;
             recyclebin.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             recyclebin.Location = new Point(452, 30);
@@ -92,7 +92,7 @@ namespace ZeroClutter
             // 
             prefetch.BackColor = Color.Transparent;
             prefetch.BackgroundImage = (Image)resources.GetObject("prefetch.BackgroundImage");
-            prefetch.BackgroundImageLayout = ImageLayout.None;
+            prefetch.BackgroundImageLayout = ImageLayout.Stretch;
             prefetch.FlatStyle = FlatStyle.Flat;
             prefetch.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             prefetch.Location = new Point(12, 30);
@@ -108,7 +108,7 @@ namespace ZeroClutter
             // 
             tempfolder.BackColor = Color.Transparent;
             tempfolder.BackgroundImage = (Image)resources.GetObject("tempfolder.BackgroundImage");
-            tempfolder.BackgroundImageLayout = ImageLayout.None;
+            tempfolder.BackgroundImageLayout = ImageLayout.Stretch;
             tempfolder.FlatStyle = FlatStyle.Flat;
             tempfolder.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             tempfolder.Location = new Point(233, 30);
@@ -158,7 +158,7 @@ namespace ZeroClutter
             // 
             saver.BackColor = Color.Transparent;
             saver.BackgroundImage = (Image)resources.GetObject("saver.BackgroundImage");
-            saver.BackgroundImageLayout = ImageLayout.None;
+            saver.BackgroundImageLayout = ImageLayout.Stretch;
             saver.FlatStyle = FlatStyle.Flat;
             saver.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             saver.ForeColor = Color.Black;
