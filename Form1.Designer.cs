@@ -32,8 +32,6 @@ namespace ZeroClutter
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-
-
             eventviewer = new Button();
             programs = new Button();
             recyclebin = new Button();
@@ -108,6 +106,7 @@ namespace ZeroClutter
             // 
             // topbar
             // 
+            topbar.BackgroundImage = (Image)resources.GetObject("topbar.BackgroundImage");
             topbar.Dock = DockStyle.Bottom;
             topbar.Items.AddRange(new ToolStripItem[] { exit, about });
             topbar.Location = new Point(0, 325);
@@ -119,7 +118,9 @@ namespace ZeroClutter
             // 
             // exit
             // 
+            exit.BackgroundImage = (Image)resources.GetObject("exit.BackgroundImage");
             exit.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            exit.ForeColor = Color.White;
             exit.Name = "exit";
             exit.Size = new Size(40, 21);
             exit.Text = "Exit";
@@ -128,11 +129,12 @@ namespace ZeroClutter
             // about
             // 
             about.Alignment = ToolStripItemAlignment.Right;
+            about.BackgroundImage = (Image)resources.GetObject("about.BackgroundImage");
             about.Font = new Font("Nirmala UI", 9.75F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            about.ForeColor = Color.White;
             about.Name = "about";
             about.Size = new Size(55, 21);
             about.Text = "About";
-            
             about.Click += about_Click;
             // 
             // saver
@@ -152,6 +154,7 @@ namespace ZeroClutter
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(684, 361);
             Controls.Add(saver);
             Controls.Add(tempfolder);
@@ -165,7 +168,7 @@ namespace ZeroClutter
             MaximumSize = new Size(700, 400);
             MinimumSize = new Size(700, 400);
             Name = "Form1";
-            Text = "Zero Clutter - lightweight file cleaner";
+            Text = "Zero Clutter";
             topbar.ResumeLayout(false);
             topbar.PerformLayout();
             ResumeLayout(false);
