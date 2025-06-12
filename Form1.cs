@@ -166,7 +166,7 @@ namespace ZeroClutter
             aboutform.ShowInTaskbar = true;
             aboutform.Controls.Add(aboutthisprogram);
 
-            aboutthisprogram.ForeColor = Color.WhiteSmoke;
+            aboutthisprogram.ForeColor = Color.White;
             aboutthisprogram.Text = "Zero Clutter\n " +
             "\nZero Clutter is a lightweight, simple file remover tool (with some built-in maintenance functions). Zero Clutter enables you to jump to important applications, clean files, and save a report to your drive.\n" +
             "\nZeroClutter works in both x64/x86 architecture.\n" + "\nVisit my Github for more: github.com/David8861.\n";
