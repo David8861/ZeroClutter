@@ -48,12 +48,14 @@ namespace ZeroClutter
             eventviewer.BackgroundImageLayout = ImageLayout.Stretch;
             eventviewer.FlatStyle = FlatStyle.Flat;
             eventviewer.Font = new Font("Lato Semibold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            eventviewer.Image = (Image)resources.GetObject("eventviewer.Image");
             eventviewer.Location = new Point(233, 178);
             eventviewer.Name = "eventviewer";
             eventviewer.Padding = new Padding(10);
             eventviewer.Size = new Size(215, 134);
             eventviewer.TabIndex = 1;
             eventviewer.Text = "Event Viewer";
+            eventviewer.TextImageRelation = TextImageRelation.ImageAboveText;
             eventviewer.Click += eventviewer_Click;
             // 
             // programs
@@ -62,12 +64,14 @@ namespace ZeroClutter
             programs.BackgroundImageLayout = ImageLayout.Stretch;
             programs.FlatStyle = FlatStyle.Flat;
             programs.Font = new Font("Lato Semibold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            programs.Image = (Image)resources.GetObject("programs.Image");
             programs.Location = new Point(12, 178);
             programs.Name = "programs";
             programs.Padding = new Padding(10);
             programs.Size = new Size(215, 134);
             programs.TabIndex = 1;
             programs.Text = "Uninstall a Program\n";
+            programs.TextImageRelation = TextImageRelation.ImageAboveText;
             programs.Click += programs_Click;
             // 
             // recyclebin
@@ -132,14 +136,17 @@ namespace ZeroClutter
             saver.BackgroundImage = (Image)resources.GetObject("saver.BackgroundImage");
             saver.BackgroundImageLayout = ImageLayout.Stretch;
             saver.FlatStyle = FlatStyle.Flat;
-            saver.Font = new Font("Lato Semibold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            saver.Font = new Font("Lato Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             saver.ForeColor = Color.Black;
+            saver.Image = (Image)resources.GetObject("saver.Image");
+            saver.ImageAlign = ContentAlignment.TopCenter;
             saver.Location = new Point(455, 178);
             saver.Name = "saver";
             saver.Padding = new Padding(10);
-            saver.Size = new Size(217, 84);
+            saver.Size = new Size(215, 84);
             saver.TabIndex = 1;
             saver.Text = "Save Report";
+            saver.TextAlign = ContentAlignment.BottomCenter;
             saver.UseVisualStyleBackColor = false;
             saver.Click += saver_Click;
             // 
@@ -165,7 +172,7 @@ namespace ZeroClutter
             exit.Font = new Font("Lato Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             exit.Location = new Point(568, 268);
             exit.Name = "exit";
-            exit.Size = new Size(104, 44);
+            exit.Size = new Size(102, 44);
             exit.TabIndex = 3;
             exit.Text = "Exit";
             exit.UseVisualStyleBackColor = true;
