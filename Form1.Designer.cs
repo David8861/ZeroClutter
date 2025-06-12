@@ -91,34 +91,39 @@ namespace ZeroClutter
             // 
             // prefetch
             // 
-            prefetch.BackColor = Color.Transparent;
+            prefetch.BackColor = Color.Black;
             prefetch.BackgroundImage = (Image)resources.GetObject("prefetch.BackgroundImage");
             prefetch.BackgroundImageLayout = ImageLayout.Stretch;
             prefetch.FlatStyle = FlatStyle.Flat;
             prefetch.Font = new Font("Lato Semibold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            prefetch.Image = (Image)resources.GetObject("prefetch.Image");
             prefetch.Location = new Point(12, 30);
             prefetch.Name = "prefetch";
             prefetch.Padding = new Padding(10);
             prefetch.Size = new Size(215, 134);
             prefetch.TabIndex = 0;
             prefetch.Text = "Clean Prefetch";
-            prefetch.UseVisualStyleBackColor = true;
+            prefetch.TextImageRelation = TextImageRelation.ImageAboveText;
+            prefetch.UseVisualStyleBackColor = false;
             prefetch.Click += prefetch_Click;
             // 
             // tempfolder
             // 
-            tempfolder.BackColor = Color.Transparent;
+            tempfolder.BackColor = Color.Black;
             tempfolder.BackgroundImage = (Image)resources.GetObject("tempfolder.BackgroundImage");
             tempfolder.BackgroundImageLayout = ImageLayout.Stretch;
             tempfolder.FlatStyle = FlatStyle.Flat;
             tempfolder.Font = new Font("Lato Semibold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            tempfolder.ForeColor = Color.Black;
+            tempfolder.Image = (Image)resources.GetObject("tempfolder.Image");
             tempfolder.Location = new Point(233, 30);
             tempfolder.Name = "tempfolder";
             tempfolder.Padding = new Padding(10);
             tempfolder.Size = new Size(215, 134);
             tempfolder.TabIndex = 0;
             tempfolder.Text = "Clean Temp";
-            tempfolder.UseVisualStyleBackColor = true;
+            tempfolder.TextImageRelation = TextImageRelation.ImageAboveText;
+            tempfolder.UseVisualStyleBackColor = false;
             tempfolder.Click += tempfolder_Click;
             // 
             // saver
