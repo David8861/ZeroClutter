@@ -136,7 +136,7 @@ namespace ZeroClutter
             saver.BackgroundImage = (Image)resources.GetObject("saver.BackgroundImage");
             saver.BackgroundImageLayout = ImageLayout.Stretch;
             saver.FlatStyle = FlatStyle.Flat;
-            saver.Font = new Font("Lato Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            saver.Font = new Font("Lato Semibold", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             saver.ForeColor = Color.Black;
             saver.Image = (Image)resources.GetObject("saver.Image");
             saver.ImageAlign = ContentAlignment.TopCenter;

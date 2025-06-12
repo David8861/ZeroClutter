@@ -1,5 +1,3 @@
-using ZeroClutter.Properties;
-
 namespace ZeroClutter
 {
     public partial class Form1 : Form
@@ -34,7 +32,7 @@ namespace ZeroClutter
 
             if (Directory.Exists("C:\\Windows\\Temp"))
             {
-                
+
                 string[] DirPaths = Directory.GetDirectories("C:\\Windows\\Temp");
 
                 if (Directory.Exists("C:\\TempDelete"))
