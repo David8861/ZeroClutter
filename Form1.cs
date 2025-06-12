@@ -32,13 +32,43 @@ namespace ZeroClutter
 
             if (Directory.Exists("C:\\Windows\\Temp"))
             {
+                
+
                 string[] DirPaths = Directory.GetDirectories("C:\\Windows\\Temp");
 
-                foreach (string DirPath in DirPaths)
-                {
-                    File.Delete(DirPath);
-                }
+                Directory.Delete("C:\\TempDelete", true);
+
+                Directory.Move("C:\\Windows\\Temp", "C:\\TempDelete");
+
+                Directory.Delete("C:\\TempDelete", true);
             }
+            if (Directory.Exists("C:\\TempDelete"))
+            {
+
+                Directory.Delete("C:\\TempDelete", true);
+
+                Directory.CreateDirectory("C:\\TempDelete");
+
+                Directory.Exists("C:\\Windows\\Temp");
+
+                if (Directory.Exists("C:\\Windows\\Temp"))
+                {
+                    string[] DirPaths = Directory.GetDirectories("C:\\Windows\\Temp");
+
+                    Directory.Move("C:\\Windows\\Temp", "C:\\TempDelete");
+
+                    foreach (string DirPath in DirPaths)
+
+                    {
+                        File.Delete(DirPath);
+                    }
+
+                    Directory.Delete("C:\\TempDelete", true);
+                }
+
+            }
+
+
 
             tempfolder.Enabled = false; tempfolder.ResetText(); tempfolder.Text = "Cleaned";
 

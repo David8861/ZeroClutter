@@ -33,6 +33,7 @@ namespace ZeroClutter
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
 
+
             eventviewer = new Button();
             programs = new Button();
             recyclebin = new Button();
