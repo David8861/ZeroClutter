@@ -33,15 +33,21 @@ namespace ZeroClutter
             if (Directory.Exists("C:\\Windows\\Temp"))
             {
                 
-
                 string[] DirPaths = Directory.GetDirectories("C:\\Windows\\Temp");
 
-                Directory.Delete("C:\\TempDelete", true);
+                if (Directory.Exists("C:\\TempDelete"))
+                {
+                    Directory.Delete("C:\\TempDelete", true);
+                }
+                else
+                {
+                    Directory.Move("C:\\Windows\\Temp", "C:\\TempDelete");
 
-                Directory.Move("C:\\Windows\\Temp", "C:\\TempDelete");
+                }
 
                 Directory.Delete("C:\\TempDelete", true);
             }
+
             if (Directory.Exists("C:\\TempDelete"))
             {
 

@@ -46,8 +46,9 @@ namespace ZeroClutter
             // 
             // eventviewer
             // 
-            eventviewer.FlatStyle = FlatStyle.System;
+            eventviewer.FlatStyle = FlatStyle.Flat;
             eventviewer.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            eventviewer.Image = (Image)resources.GetObject("eventviewer.Image");
             eventviewer.Location = new Point(233, 203);
             eventviewer.Name = "eventviewer";
             eventviewer.Padding = new Padding(10);
@@ -58,8 +59,9 @@ namespace ZeroClutter
             // 
             // programs
             // 
-            programs.FlatStyle = FlatStyle.System;
+            programs.FlatStyle = FlatStyle.Flat;
             programs.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            programs.Image = (Image)resources.GetObject("programs.Image");
             programs.Location = new Point(12, 203);
             programs.Name = "programs";
             programs.Padding = new Padding(10);
@@ -70,38 +72,48 @@ namespace ZeroClutter
             // 
             // recyclebin
             // 
-            recyclebin.FlatStyle = FlatStyle.System;
+            recyclebin.BackColor = Color.Transparent;
+            recyclebin.BackgroundImageLayout = ImageLayout.None;
+            recyclebin.FlatStyle = FlatStyle.Flat;
             recyclebin.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            recyclebin.Image = (Image)resources.GetObject("recyclebin.Image");
             recyclebin.Location = new Point(452, 30);
             recyclebin.Name = "recyclebin";
             recyclebin.Padding = new Padding(10);
             recyclebin.Size = new Size(220, 160);
             recyclebin.TabIndex = 1;
-            recyclebin.Text = "Clean Recycle Bin";
+            recyclebin.Text = "Recycle Bin";
+            recyclebin.UseVisualStyleBackColor = false;
             recyclebin.Click += recyclebin_Click;
             // 
             // prefetch
             // 
-            prefetch.FlatStyle = FlatStyle.System;
+            prefetch.BackColor = Color.Transparent;
+            prefetch.FlatStyle = FlatStyle.Flat;
             prefetch.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            prefetch.Image = (Image)resources.GetObject("prefetch.Image");
             prefetch.Location = new Point(12, 30);
             prefetch.Name = "prefetch";
             prefetch.Padding = new Padding(10);
             prefetch.Size = new Size(215, 160);
             prefetch.TabIndex = 0;
             prefetch.Text = "Clean Prefetch";
+            prefetch.UseVisualStyleBackColor = true;
             prefetch.Click += prefetch_Click;
             // 
             // tempfolder
             // 
-            tempfolder.FlatStyle = FlatStyle.System;
+            tempfolder.BackColor = Color.Transparent;
+            tempfolder.FlatStyle = FlatStyle.Flat;
             tempfolder.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tempfolder.Image = (Image)resources.GetObject("tempfolder.Image");
             tempfolder.Location = new Point(233, 30);
             tempfolder.Name = "tempfolder";
             tempfolder.Padding = new Padding(10);
             tempfolder.Size = new Size(216, 160);
             tempfolder.TabIndex = 0;
             tempfolder.Text = "Clean Temp";
+            tempfolder.UseVisualStyleBackColor = true;
             tempfolder.Click += tempfolder_Click;
             // 
             // topbar
@@ -129,6 +141,7 @@ namespace ZeroClutter
             // about
             // 
             about.Alignment = ToolStripItemAlignment.Right;
+            about.BackColor = Color.DimGray;
             about.BackgroundImage = (Image)resources.GetObject("about.BackgroundImage");
             about.Font = new Font("Nirmala UI", 9.75F, FontStyle.Italic, GraphicsUnit.Point, 0);
             about.ForeColor = Color.White;
@@ -139,14 +152,18 @@ namespace ZeroClutter
             // 
             // saver
             // 
-            saver.FlatStyle = FlatStyle.System;
+            saver.BackColor = Color.Transparent;
+            saver.FlatStyle = FlatStyle.Flat;
             saver.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            saver.ForeColor = Color.Black;
+            saver.Image = (Image)resources.GetObject("saver.Image");
             saver.Location = new Point(452, 203);
             saver.Name = "saver";
             saver.Padding = new Padding(10);
             saver.Size = new Size(220, 104);
             saver.TabIndex = 1;
             saver.Text = "Save Report";
+            saver.UseVisualStyleBackColor = false;
             saver.Click += saver_Click;
             // 
             // Form1
