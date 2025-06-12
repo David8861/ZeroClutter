@@ -156,11 +156,13 @@ namespace ZeroClutter
             about.BackgroundImageLayout = ImageLayout.Stretch;
             about.FlatStyle = FlatStyle.Flat;
             about.Font = new Font("Lato Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            about.Image = (Image)resources.GetObject("about.Image");
             about.Location = new Point(455, 268);
             about.Name = "about";
             about.Size = new Size(107, 44);
             about.TabIndex = 2;
-            about.Text = "About";
+            about.TextAlign = ContentAlignment.BottomCenter;
+            about.TextImageRelation = TextImageRelation.ImageAboveText;
             about.UseVisualStyleBackColor = true;
             about.Click += about_Click;
             // 
@@ -170,11 +172,11 @@ namespace ZeroClutter
             exit.BackgroundImageLayout = ImageLayout.Stretch;
             exit.FlatStyle = FlatStyle.Flat;
             exit.Font = new Font("Lato Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            exit.Image = (Image)resources.GetObject("exit.Image");
             exit.Location = new Point(568, 268);
             exit.Name = "exit";
             exit.Size = new Size(102, 44);
             exit.TabIndex = 3;
-            exit.Text = "Exit";
             exit.UseVisualStyleBackColor = true;
             exit.Click += exit_Click;
             // 
