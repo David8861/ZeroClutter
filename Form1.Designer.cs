@@ -46,9 +46,10 @@ namespace ZeroClutter
             // 
             // eventviewer
             // 
+            eventviewer.BackgroundImage = (Image)resources.GetObject("eventviewer.BackgroundImage");
+            eventviewer.BackgroundImageLayout = ImageLayout.None;
             eventviewer.FlatStyle = FlatStyle.Flat;
             eventviewer.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            eventviewer.Image = (Image)resources.GetObject("eventviewer.Image");
             eventviewer.Location = new Point(233, 203);
             eventviewer.Name = "eventviewer";
             eventviewer.Padding = new Padding(10);
@@ -59,9 +60,10 @@ namespace ZeroClutter
             // 
             // programs
             // 
+            programs.BackgroundImage = (Image)resources.GetObject("programs.BackgroundImage");
+            programs.BackgroundImageLayout = ImageLayout.None;
             programs.FlatStyle = FlatStyle.Flat;
             programs.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            programs.Image = (Image)resources.GetObject("programs.Image");
             programs.Location = new Point(12, 203);
             programs.Name = "programs";
             programs.Padding = new Padding(10);
@@ -73,10 +75,10 @@ namespace ZeroClutter
             // recyclebin
             // 
             recyclebin.BackColor = Color.Transparent;
+            recyclebin.BackgroundImage = (Image)resources.GetObject("recyclebin.BackgroundImage");
             recyclebin.BackgroundImageLayout = ImageLayout.None;
             recyclebin.FlatStyle = FlatStyle.Flat;
             recyclebin.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            recyclebin.Image = (Image)resources.GetObject("recyclebin.Image");
             recyclebin.Location = new Point(452, 30);
             recyclebin.Name = "recyclebin";
             recyclebin.Padding = new Padding(10);
@@ -89,9 +91,10 @@ namespace ZeroClutter
             // prefetch
             // 
             prefetch.BackColor = Color.Transparent;
+            prefetch.BackgroundImage = (Image)resources.GetObject("prefetch.BackgroundImage");
+            prefetch.BackgroundImageLayout = ImageLayout.None;
             prefetch.FlatStyle = FlatStyle.Flat;
             prefetch.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            prefetch.Image = (Image)resources.GetObject("prefetch.Image");
             prefetch.Location = new Point(12, 30);
             prefetch.Name = "prefetch";
             prefetch.Padding = new Padding(10);
@@ -104,9 +107,10 @@ namespace ZeroClutter
             // tempfolder
             // 
             tempfolder.BackColor = Color.Transparent;
+            tempfolder.BackgroundImage = (Image)resources.GetObject("tempfolder.BackgroundImage");
+            tempfolder.BackgroundImageLayout = ImageLayout.None;
             tempfolder.FlatStyle = FlatStyle.Flat;
             tempfolder.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tempfolder.Image = (Image)resources.GetObject("tempfolder.Image");
             tempfolder.Location = new Point(233, 30);
             tempfolder.Name = "tempfolder";
             tempfolder.Padding = new Padding(10);
@@ -153,10 +157,11 @@ namespace ZeroClutter
             // saver
             // 
             saver.BackColor = Color.Transparent;
+            saver.BackgroundImage = (Image)resources.GetObject("saver.BackgroundImage");
+            saver.BackgroundImageLayout = ImageLayout.None;
             saver.FlatStyle = FlatStyle.Flat;
             saver.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             saver.ForeColor = Color.Black;
-            saver.Image = (Image)resources.GetObject("saver.Image");
             saver.Location = new Point(452, 203);
             saver.Name = "saver";
             saver.Padding = new Padding(10);
@@ -172,6 +177,7 @@ namespace ZeroClutter
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(684, 361);
             Controls.Add(saver);
             Controls.Add(tempfolder);
