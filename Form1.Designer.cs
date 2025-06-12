@@ -47,11 +47,11 @@ namespace ZeroClutter
             eventviewer.BackgroundImage = (Image)resources.GetObject("eventviewer.BackgroundImage");
             eventviewer.BackgroundImageLayout = ImageLayout.Stretch;
             eventviewer.FlatStyle = FlatStyle.Flat;
-            eventviewer.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            eventviewer.Location = new Point(233, 203);
+            eventviewer.Font = new Font("Lato Semibold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            eventviewer.Location = new Point(233, 178);
             eventviewer.Name = "eventviewer";
             eventviewer.Padding = new Padding(10);
-            eventviewer.Size = new Size(216, 134);
+            eventviewer.Size = new Size(215, 134);
             eventviewer.TabIndex = 1;
             eventviewer.Text = "Event Viewer";
             eventviewer.Click += eventviewer_Click;
@@ -61,8 +61,8 @@ namespace ZeroClutter
             programs.BackgroundImage = (Image)resources.GetObject("programs.BackgroundImage");
             programs.BackgroundImageLayout = ImageLayout.Stretch;
             programs.FlatStyle = FlatStyle.Flat;
-            programs.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            programs.Location = new Point(12, 203);
+            programs.Font = new Font("Lato Semibold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            programs.Location = new Point(12, 178);
             programs.Name = "programs";
             programs.Padding = new Padding(10);
             programs.Size = new Size(215, 134);
@@ -72,17 +72,20 @@ namespace ZeroClutter
             // 
             // recyclebin
             // 
-            recyclebin.BackColor = Color.Transparent;
+            recyclebin.BackColor = Color.Black;
             recyclebin.BackgroundImage = (Image)resources.GetObject("recyclebin.BackgroundImage");
             recyclebin.BackgroundImageLayout = ImageLayout.Stretch;
             recyclebin.FlatStyle = FlatStyle.Flat;
-            recyclebin.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            recyclebin.Font = new Font("Lato Semibold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            recyclebin.ForeColor = Color.Black;
+            recyclebin.Image = (Image)resources.GetObject("recyclebin.Image");
             recyclebin.Location = new Point(455, 30);
             recyclebin.Name = "recyclebin";
             recyclebin.Padding = new Padding(10);
-            recyclebin.Size = new Size(217, 160);
+            recyclebin.Size = new Size(215, 134);
             recyclebin.TabIndex = 1;
-            recyclebin.Text = "Recycle Bin";
+            recyclebin.Text = "Clean Recycle Bin";
+            recyclebin.TextImageRelation = TextImageRelation.ImageAboveText;
             recyclebin.UseVisualStyleBackColor = false;
             recyclebin.Click += recyclebin_Click;
             // 
@@ -92,11 +95,11 @@ namespace ZeroClutter
             prefetch.BackgroundImage = (Image)resources.GetObject("prefetch.BackgroundImage");
             prefetch.BackgroundImageLayout = ImageLayout.Stretch;
             prefetch.FlatStyle = FlatStyle.Flat;
-            prefetch.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            prefetch.Font = new Font("Lato Semibold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
             prefetch.Location = new Point(12, 30);
             prefetch.Name = "prefetch";
             prefetch.Padding = new Padding(10);
-            prefetch.Size = new Size(215, 160);
+            prefetch.Size = new Size(215, 134);
             prefetch.TabIndex = 0;
             prefetch.Text = "Clean Prefetch";
             prefetch.UseVisualStyleBackColor = true;
@@ -108,11 +111,11 @@ namespace ZeroClutter
             tempfolder.BackgroundImage = (Image)resources.GetObject("tempfolder.BackgroundImage");
             tempfolder.BackgroundImageLayout = ImageLayout.Stretch;
             tempfolder.FlatStyle = FlatStyle.Flat;
-            tempfolder.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tempfolder.Font = new Font("Lato Semibold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
             tempfolder.Location = new Point(233, 30);
             tempfolder.Name = "tempfolder";
             tempfolder.Padding = new Padding(10);
-            tempfolder.Size = new Size(216, 160);
+            tempfolder.Size = new Size(215, 134);
             tempfolder.TabIndex = 0;
             tempfolder.Text = "Clean Temp";
             tempfolder.UseVisualStyleBackColor = true;
@@ -124,9 +127,9 @@ namespace ZeroClutter
             saver.BackgroundImage = (Image)resources.GetObject("saver.BackgroundImage");
             saver.BackgroundImageLayout = ImageLayout.Stretch;
             saver.FlatStyle = FlatStyle.Flat;
-            saver.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            saver.Font = new Font("Lato Semibold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
             saver.ForeColor = Color.Black;
-            saver.Location = new Point(455, 203);
+            saver.Location = new Point(455, 178);
             saver.Name = "saver";
             saver.Padding = new Padding(10);
             saver.Size = new Size(217, 84);
@@ -140,7 +143,8 @@ namespace ZeroClutter
             about.BackgroundImage = (Image)resources.GetObject("about.BackgroundImage");
             about.BackgroundImageLayout = ImageLayout.Stretch;
             about.FlatStyle = FlatStyle.Flat;
-            about.Location = new Point(455, 293);
+            about.Font = new Font("Lato Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            about.Location = new Point(455, 268);
             about.Name = "about";
             about.Size = new Size(107, 44);
             about.TabIndex = 2;
@@ -153,7 +157,8 @@ namespace ZeroClutter
             exit.BackgroundImage = (Image)resources.GetObject("exit.BackgroundImage");
             exit.BackgroundImageLayout = ImageLayout.Stretch;
             exit.FlatStyle = FlatStyle.Flat;
-            exit.Location = new Point(568, 293);
+            exit.Font = new Font("Lato Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            exit.Location = new Point(568, 268);
             exit.Name = "exit";
             exit.Size = new Size(104, 44);
             exit.TabIndex = 3;
@@ -167,7 +172,7 @@ namespace ZeroClutter
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            BackgroundImageLayout = ImageLayout.None;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(684, 361);
             Controls.Add(exit);
             Controls.Add(about);
@@ -177,6 +182,7 @@ namespace ZeroClutter
             Controls.Add(programs);
             Controls.Add(recyclebin);
             Controls.Add(prefetch);
+            ForeColor = Color.Black;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Location = new Point(960, 540);
             MaximumSize = new Size(700, 400);

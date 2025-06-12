@@ -92,7 +92,7 @@ namespace ZeroClutter
 
             }
 
-            recyclebin.Enabled = false; recyclebin.ResetText(); recyclebin.Text = "Cleaned";
+            recyclebin.Enabled = false; recyclebin.Text = "Cleaned";
 
         }
         private void programs_Click(object sender, EventArgs e)
