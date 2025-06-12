@@ -42,10 +42,10 @@ namespace ZeroClutter
                 else
                 {
                     Directory.Move("C:\\Windows\\Temp", "C:\\TempDelete");
+                    Directory.Delete("C:\\TempDelete", true);
 
                 }
 
-                Directory.Delete("C:\\TempDelete", true);
             }
 
             if (Directory.Exists("C:\\TempDelete"))
