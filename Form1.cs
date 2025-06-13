@@ -1,7 +1,3 @@
-using Microsoft.VisualBasic.Devices;
-using System.Resources;
-using ZeroClutter.Properties;
-
 namespace ZeroClutter
 {
     public partial class Form1 : Form
@@ -18,12 +14,12 @@ namespace ZeroClutter
 
 
 
-            private void changelightmode_Click(object sender, EventArgs e)
+        private void changelightmode_Click(object sender, EventArgs e)
         {
-            
+
             this.changelightmode.Select();
 
-            Icon = Icon.ExtractAssociatedIcon("C:\\repos\\ZeroClutter\\Zero Clutter Icon Alternative.ico");
+            
             backtodarkmode.Image = System.Drawing.Image.FromFile("C:\\repos\\ZeroClutter\\DarkIcon.png");
             changelightmode.BackgroundImage = System.Drawing.Image.FromFile("C:\\repos\\ZeroClutter\\ButtonBack.jpg");
             backtodarkmode.BackgroundImage = System.Drawing.Image.FromFile("C:\\repos\\ZeroClutter\\ButtonBackLight.jpg");
@@ -40,13 +36,13 @@ namespace ZeroClutter
             about.Image = System.Drawing.Image.FromFile("C:\\repos\\ZeroClutter\\QuestionMarkDark.png");
             exit.Image = System.Drawing.Image.FromFile("C:\\repos\\ZeroClutter\\ExitManDark.png");
 
-            
+
         }
         private void backtodarkmode_Click(object sender, EventArgs e)
         {
 
             this.backtodarkmode.Select();
-            Icon = Icon.ExtractAssociatedIcon("C:\\repos\\ZeroClutter\\Zero Clutter Icon.ico");
+            
             backtodarkmode.Image = System.Drawing.Image.FromFile("C:\\repos\\ZeroClutter\\DarkIcon.png");
             backtodarkmode.BackgroundImage = System.Drawing.Image.FromFile("C:\\repos\\ZeroClutter\\ButtonBackLight.jpg");
             BackgroundImage = System.Drawing.Image.FromFile("C:\\repos\\ZeroClutter\\FormBackground.jpg");
@@ -61,7 +57,7 @@ namespace ZeroClutter
             about.Image = System.Drawing.Image.FromFile("C:\\repos\\ZeroClutter\\QuestionMark.png");
             exit.Image = System.Drawing.Image.FromFile("C:\\repos\\ZeroClutter\\ExitMan.png");
 
-            
+
         }
 
 
@@ -124,7 +120,7 @@ namespace ZeroClutter
 
                     Directory.Delete("C:\\TempDelete", true);
                 }
-                else 
+                else
                 {
 
                     Directory.Delete("C:\\TempDelete", true);
@@ -134,7 +130,7 @@ namespace ZeroClutter
 
 
 
-            tempfolder.Enabled = false; tempfolder.ResetText(); 
+            tempfolder.Enabled = false; tempfolder.ResetText();
 
 
         }
