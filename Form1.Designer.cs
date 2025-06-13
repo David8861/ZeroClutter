@@ -86,7 +86,6 @@ namespace ZeroClutter
             eventviewer.Padding = new Padding(10);
             eventviewer.Size = new Size(215, 134);
             eventviewer.TabIndex = 1;
-            eventviewer.Text = "Event Viewer";
             eventviewer.TextImageRelation = TextImageRelation.ImageAboveText;
             eventviewer.Click += eventviewer_Click;
             // 
@@ -102,7 +101,6 @@ namespace ZeroClutter
             programs.Padding = new Padding(10);
             programs.Size = new Size(215, 134);
             programs.TabIndex = 1;
-            programs.Text = "Uninstall a Program\n";
             programs.TextImageRelation = TextImageRelation.ImageAboveText;
             programs.Click += programs_Click;
             // 
@@ -120,7 +118,6 @@ namespace ZeroClutter
             recyclebin.Padding = new Padding(10);
             recyclebin.Size = new Size(215, 134);
             recyclebin.TabIndex = 1;
-            recyclebin.Text = "Clean Recycle Bin";
             recyclebin.TextImageRelation = TextImageRelation.ImageAboveText;
             recyclebin.UseVisualStyleBackColor = false;
             recyclebin.Click += recyclebin_Click;
@@ -138,7 +135,6 @@ namespace ZeroClutter
             prefetch.Padding = new Padding(10);
             prefetch.Size = new Size(215, 134);
             prefetch.TabIndex = 0;
-            prefetch.Text = "Clean Prefetch";
             prefetch.TextImageRelation = TextImageRelation.ImageAboveText;
             prefetch.UseVisualStyleBackColor = false;
             prefetch.Click += prefetch_Click;
@@ -157,7 +153,6 @@ namespace ZeroClutter
             tempfolder.Padding = new Padding(10);
             tempfolder.Size = new Size(215, 134);
             tempfolder.TabIndex = 0;
-            tempfolder.Text = "Clean Temp";
             tempfolder.TextImageRelation = TextImageRelation.ImageAboveText;
             tempfolder.UseVisualStyleBackColor = false;
             tempfolder.Click += tempfolder_Click;
@@ -171,14 +166,11 @@ namespace ZeroClutter
             saver.Font = new Font("Verdana", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             saver.ForeColor = Color.Black;
             saver.Image = (Image)resources.GetObject("saver.Image");
-            saver.ImageAlign = ContentAlignment.TopCenter;
             saver.Location = new Point(455, 178);
             saver.Name = "saver";
             saver.Padding = new Padding(10);
             saver.Size = new Size(215, 84);
             saver.TabIndex = 1;
-            saver.Text = "Save Report";
-            saver.TextAlign = ContentAlignment.BottomCenter;
             saver.UseVisualStyleBackColor = false;
             saver.Click += saver_Click;
             // 
