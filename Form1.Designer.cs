@@ -32,6 +32,7 @@ namespace ZeroClutter
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            backtodarkmode = new Button();
             changelightmode = new Button();
             eventviewer = new Button();
             programs = new Button();
@@ -43,6 +44,21 @@ namespace ZeroClutter
             exit = new Button();
             SuspendLayout();
             // 
+            // backtodarkmode
+            // 
+            backtodarkmode.BackColor = Color.Black;
+            backtodarkmode.BackgroundImage = (Image)resources.GetObject("backtodarkmode.BackgroundImage");
+            backtodarkmode.BackgroundImageLayout = ImageLayout.None;
+            backtodarkmode.FlatStyle = FlatStyle.Flat;
+            backtodarkmode.Image = (Image)resources.GetObject("backtodarkmode.Image");
+            backtodarkmode.Location = new Point(628, 4);
+            backtodarkmode.Name = "backtodarkmode";
+            backtodarkmode.Padding = new Padding(10);
+            backtodarkmode.Size = new Size(20, 22);
+            backtodarkmode.TabIndex = 0;
+            backtodarkmode.UseVisualStyleBackColor = false;
+            backtodarkmode.Click += backtodarkmode_Click;
+            // 
             // changelightmode
             // 
             changelightmode.BackColor = Color.Black;
@@ -50,10 +66,10 @@ namespace ZeroClutter
             changelightmode.BackgroundImageLayout = ImageLayout.None;
             changelightmode.FlatStyle = FlatStyle.Flat;
             changelightmode.Image = (Image)resources.GetObject("changelightmode.Image");
-            changelightmode.Location = new Point(646, 4);
+            changelightmode.Location = new Point(645, 4);
             changelightmode.Name = "changelightmode";
             changelightmode.Padding = new Padding(10);
-            changelightmode.Size = new Size(22, 22);
+            changelightmode.Size = new Size(23, 22);
             changelightmode.TabIndex = 0;
             changelightmode.UseVisualStyleBackColor = false;
             changelightmode.Click += changelightmode_Click;
@@ -204,6 +220,7 @@ namespace ZeroClutter
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(684, 346);
+            Controls.Add(backtodarkmode);
             Controls.Add(changelightmode);
             Controls.Add(exit);
             Controls.Add(about);
@@ -225,7 +242,7 @@ namespace ZeroClutter
 
 
 
-        Button prefetch, tempfolder, recyclebin, programs, eventviewer, saver, changelightmode; 
+        Button prefetch, tempfolder, recyclebin, programs, eventviewer, saver, changelightmode, backtodarkmode; 
         private Button about, exit;
         
     }

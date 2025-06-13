@@ -1,3 +1,4 @@
+using Microsoft.VisualBasic.Devices;
 using System.Resources;
 using ZeroClutter.Properties;
 
@@ -22,8 +23,11 @@ namespace ZeroClutter
             
             this.changelightmode.Select();
 
-            changelightmode.Image = System.Drawing.Image.FromFile("C:\\repos\\ZeroClutter\\DarkIcon.png");
-            changelightmode.BackgroundImage = System.Drawing.Image.FromFile("C:\\repos\\ZeroClutter\\ButtonBackLight.jpg");
+            Icon = Icon.ExtractAssociatedIcon("C:\\repos\\ZeroClutter\\Zero Clutter Icon Alternative.ico");
+            backtodarkmode.Image = System.Drawing.Image.FromFile("C:\\repos\\ZeroClutter\\DarkIcon.png");
+            changelightmode.BackgroundImage = System.Drawing.Image.FromFile("C:\\repos\\ZeroClutter\\ButtonBack.jpg");
+            backtodarkmode.BackgroundImage = System.Drawing.Image.FromFile("C:\\repos\\ZeroClutter\\ButtonBackLight.jpg");
+            changelightmode.BackgroundImage = System.Drawing.Image.FromFile("C:\\repos\\ZeroClutter\\ButtonBack.jpg");
             BackgroundImage = System.Drawing.Image.FromFile("C:\\repos\\ZeroClutter\\FormBackgroundLight.jpg");
             recyclebin.BackgroundImage = Image.FromFile("C:\\repos\\ZeroClutter\\ButtonBackLight.jpg");
             prefetch.BackgroundImage = Image.FromFile("C:\\repos\\ZeroClutter\\ButtonBackLight.jpg");
@@ -36,9 +40,30 @@ namespace ZeroClutter
             about.Image = System.Drawing.Image.FromFile("C:\\repos\\ZeroClutter\\QuestionMarkDark.png");
             exit.Image = System.Drawing.Image.FromFile("C:\\repos\\ZeroClutter\\ExitManDark.png");
 
+            
+        }
+        private void backtodarkmode_Click(object sender, EventArgs e)
+        {
+
+            this.backtodarkmode.Select();
+            Icon = Icon.ExtractAssociatedIcon("C:\\repos\\ZeroClutter\\Zero Clutter Icon.ico");
+            backtodarkmode.Image = System.Drawing.Image.FromFile("C:\\repos\\ZeroClutter\\DarkIcon.png");
+            backtodarkmode.BackgroundImage = System.Drawing.Image.FromFile("C:\\repos\\ZeroClutter\\ButtonBackLight.jpg");
+            BackgroundImage = System.Drawing.Image.FromFile("C:\\repos\\ZeroClutter\\FormBackground.jpg");
+            recyclebin.BackgroundImage = Image.FromFile("C:\\repos\\ZeroClutter\\ButtonBack.jpg");
+            prefetch.BackgroundImage = Image.FromFile("C:\\repos\\ZeroClutter\\ButtonBack.jpg");
+            tempfolder.BackgroundImage = Image.FromFile("C:\\repos\\ZeroClutter\\ButtonBack.jpg");
+            eventviewer.BackgroundImage = Image.FromFile("C:\\repos\\ZeroClutter\\ButtonBack.jpg");
+            programs.BackgroundImage = Image.FromFile("C:\\repos\\ZeroClutter\\ButtonBack.jpg");
+            saver.BackgroundImage = Image.FromFile("C:\\repos\\ZeroClutter\\ButtonBack.jpg");
+            about.BackgroundImage = Image.FromFile("C:\\repos\\ZeroClutter\\ButtonBack.jpg");
+            exit.BackgroundImage = Image.FromFile("C:\\repos\\ZeroClutter\\ButtonBack.jpg");
+            about.Image = System.Drawing.Image.FromFile("C:\\repos\\ZeroClutter\\QuestionMark.png");
+            exit.Image = System.Drawing.Image.FromFile("C:\\repos\\ZeroClutter\\ExitMan.png");
+
+            
         }
 
-        
 
 
         private void prefetch_Click(object sender, EventArgs e)
