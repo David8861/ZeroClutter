@@ -153,7 +153,7 @@ namespace ZeroClutter
             // about
             // 
             about.BackgroundImage = (Image)resources.GetObject("about.BackgroundImage");
-            about.BackgroundImageLayout = ImageLayout.Stretch;
+            about.BackgroundImageLayout = ImageLayout.None;
             about.FlatStyle = FlatStyle.Flat;
             about.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             about.Image = (Image)resources.GetObject("about.Image");
@@ -169,7 +169,7 @@ namespace ZeroClutter
             // exit
             // 
             exit.BackgroundImage = (Image)resources.GetObject("exit.BackgroundImage");
-            exit.BackgroundImageLayout = ImageLayout.Stretch;
+            exit.BackgroundImageLayout = ImageLayout.None;
             exit.FlatStyle = FlatStyle.Flat;
             exit.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             exit.Image = (Image)resources.GetObject("exit.Image");
