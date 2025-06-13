@@ -55,7 +55,6 @@ namespace ZeroClutter
 
                 Directory.CreateDirectory("C:\\TempDelete");
 
-                Directory.Exists("C:\\Windows\\Temp");
 
                 if (Directory.Exists("C:\\Windows\\Temp"))
                 {
@@ -71,7 +70,12 @@ namespace ZeroClutter
 
                     Directory.Delete("C:\\TempDelete", true);
                 }
+                else 
+                {
 
+                    Directory.Delete("C:\\TempDelete", true);
+
+                }
             }
 
 
