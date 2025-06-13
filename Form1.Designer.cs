@@ -47,7 +47,7 @@ namespace ZeroClutter
             eventviewer.BackgroundImage = (Image)resources.GetObject("eventviewer.BackgroundImage");
             eventviewer.BackgroundImageLayout = ImageLayout.Stretch;
             eventviewer.FlatStyle = FlatStyle.Flat;
-            eventviewer.Font = new Font("Microsoft Sans Serif", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            eventviewer.Font = new Font("Verdana", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             eventviewer.Image = (Image)resources.GetObject("eventviewer.Image");
             eventviewer.Location = new Point(233, 178);
             eventviewer.Name = "eventviewer";
@@ -63,7 +63,7 @@ namespace ZeroClutter
             programs.BackgroundImage = (Image)resources.GetObject("programs.BackgroundImage");
             programs.BackgroundImageLayout = ImageLayout.Stretch;
             programs.FlatStyle = FlatStyle.Flat;
-            programs.Font = new Font("Microsoft Sans Serif", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            programs.Font = new Font("Verdana", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             programs.Image = (Image)resources.GetObject("programs.Image");
             programs.Location = new Point(12, 178);
             programs.Name = "programs";
@@ -80,7 +80,7 @@ namespace ZeroClutter
             recyclebin.BackgroundImage = (Image)resources.GetObject("recyclebin.BackgroundImage");
             recyclebin.BackgroundImageLayout = ImageLayout.Stretch;
             recyclebin.FlatStyle = FlatStyle.Flat;
-            recyclebin.Font = new Font("Microsoft Sans Serif", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            recyclebin.Font = new Font("Verdana", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             recyclebin.ForeColor = Color.Black;
             recyclebin.Image = (Image)resources.GetObject("recyclebin.Image");
             recyclebin.Location = new Point(455, 30);
@@ -99,7 +99,7 @@ namespace ZeroClutter
             prefetch.BackgroundImage = (Image)resources.GetObject("prefetch.BackgroundImage");
             prefetch.BackgroundImageLayout = ImageLayout.Stretch;
             prefetch.FlatStyle = FlatStyle.Flat;
-            prefetch.Font = new Font("Microsoft Sans Serif", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            prefetch.Font = new Font("Verdana", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             prefetch.Image = (Image)resources.GetObject("prefetch.Image");
             prefetch.Location = new Point(12, 30);
             prefetch.Name = "prefetch";
@@ -117,7 +117,7 @@ namespace ZeroClutter
             tempfolder.BackgroundImage = (Image)resources.GetObject("tempfolder.BackgroundImage");
             tempfolder.BackgroundImageLayout = ImageLayout.Stretch;
             tempfolder.FlatStyle = FlatStyle.Flat;
-            tempfolder.Font = new Font("Microsoft Sans Serif", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            tempfolder.Font = new Font("Verdana", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             tempfolder.ForeColor = Color.Black;
             tempfolder.Image = (Image)resources.GetObject("tempfolder.Image");
             tempfolder.Location = new Point(233, 30);
@@ -136,7 +136,7 @@ namespace ZeroClutter
             saver.BackgroundImage = (Image)resources.GetObject("saver.BackgroundImage");
             saver.BackgroundImageLayout = ImageLayout.Stretch;
             saver.FlatStyle = FlatStyle.Flat;
-            saver.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            saver.Font = new Font("Verdana", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             saver.ForeColor = Color.Black;
             saver.Image = (Image)resources.GetObject("saver.Image");
             saver.ImageAlign = ContentAlignment.TopCenter;
