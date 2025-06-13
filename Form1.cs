@@ -12,6 +12,18 @@ namespace ZeroClutter
 
         }
 
+
+
+            private void changelightmode_Click(object sender, EventArgs e)
+        {
+
+            
+
+        }
+
+        
+
+
         private void prefetch_Click(object sender, EventArgs e)
         {
 

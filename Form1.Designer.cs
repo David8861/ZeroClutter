@@ -32,6 +32,7 @@ namespace ZeroClutter
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            changelightmode = new Button();
             eventviewer = new Button();
             programs = new Button();
             recyclebin = new Button();
@@ -41,6 +42,20 @@ namespace ZeroClutter
             about = new Button();
             exit = new Button();
             SuspendLayout();
+            // 
+            // changelightmode
+            // 
+            changelightmode.BackColor = Color.Black;
+            changelightmode.BackgroundImage = (Image)resources.GetObject("changelightmode.BackgroundImage");
+            changelightmode.BackgroundImageLayout = ImageLayout.None;
+            changelightmode.FlatStyle = FlatStyle.Flat;
+            changelightmode.Location = new Point(646, 4);
+            changelightmode.Name = "changelightmode";
+            changelightmode.Padding = new Padding(10);
+            changelightmode.Size = new Size(24, 22);
+            changelightmode.TabIndex = 0;
+            changelightmode.UseVisualStyleBackColor = false;
+            changelightmode.Click += changelightmode_Click;
             // 
             // eventviewer
             // 
@@ -187,7 +202,8 @@ namespace ZeroClutter
             AutoSize = true;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(684, 361);
+            ClientSize = new Size(684, 346);
+            Controls.Add(changelightmode);
             Controls.Add(exit);
             Controls.Add(about);
             Controls.Add(saver);
@@ -199,8 +215,8 @@ namespace ZeroClutter
             ForeColor = Color.Black;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Location = new Point(960, 540);
-            MaximumSize = new Size(700, 400);
-            MinimumSize = new Size(700, 400);
+            MaximumSize = new Size(700, 385);
+            MinimumSize = new Size(700, 385);
             Name = "Form1";
             Text = "Zero Clutter";
             ResumeLayout(false);
@@ -208,7 +224,7 @@ namespace ZeroClutter
 
 
 
-        Button prefetch, tempfolder, recyclebin, programs, eventviewer, saver; 
+        Button prefetch, tempfolder, recyclebin, programs, eventviewer, saver, changelightmode; 
         private Button about, exit;
         
     }
