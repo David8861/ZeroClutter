@@ -24,7 +24,7 @@ namespace ZeroClutter
 
             }
 
-            prefetch.Enabled = false; prefetch.ResetText(); prefetch.Text = "Cleaned";
+            prefetch.Enabled = false; prefetch.ResetText();
 
         }
         private void tempfolder_Click(object sender, EventArgs e)
@@ -80,7 +80,7 @@ namespace ZeroClutter
 
 
 
-            tempfolder.Enabled = false; tempfolder.ResetText(); tempfolder.Text = "Cleaned";
+            tempfolder.Enabled = false; tempfolder.ResetText(); 
 
 
         }
@@ -94,7 +94,7 @@ namespace ZeroClutter
 
             }
 
-            recyclebin.Enabled = false; recyclebin.Text = "Cleaned";
+            recyclebin.Enabled = false; recyclebin.ResetText();
 
         }
         private void programs_Click(object sender, EventArgs e)
@@ -125,7 +125,7 @@ namespace ZeroClutter
 
                 File.WriteAllText("C:\\ZeroClutter\\SaveReport.txt", "You cleaned Prefetch, Temp, and Recycle Bin.");
 
-                saver.Enabled = false; saver.ResetText(); saver.Text = "Saved";
+                saver.Enabled = false; saver.ResetText(); saver.Text = "Saved to C:\\";
             }
             else
             {
@@ -134,7 +134,7 @@ namespace ZeroClutter
 
                 File.WriteAllText("C:\\ZeroClutter\\SaveReport.txt", "You cleaned Prefetch, Temp, and Recycle Bin.");
 
-                saver.Enabled = false; saver.ResetText(); saver.Text = "Saved";
+                saver.Enabled = false; saver.ResetText(); saver.Text = "Saved to C:\\";
             }
 
         }
