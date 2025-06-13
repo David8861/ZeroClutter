@@ -49,10 +49,11 @@ namespace ZeroClutter
             changelightmode.BackgroundImage = (Image)resources.GetObject("changelightmode.BackgroundImage");
             changelightmode.BackgroundImageLayout = ImageLayout.None;
             changelightmode.FlatStyle = FlatStyle.Flat;
+            changelightmode.Image = (Image)resources.GetObject("changelightmode.Image");
             changelightmode.Location = new Point(646, 4);
             changelightmode.Name = "changelightmode";
             changelightmode.Padding = new Padding(10);
-            changelightmode.Size = new Size(24, 22);
+            changelightmode.Size = new Size(22, 22);
             changelightmode.TabIndex = 0;
             changelightmode.UseVisualStyleBackColor = false;
             changelightmode.Click += changelightmode_Click;
