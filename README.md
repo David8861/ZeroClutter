@@ -18,7 +18,7 @@
 
 ### Languages Used
 
-![Image](https://github.com/user-attachments/assets/b3a95542-2a41-477d-a72b-29388d200a13)
+![Image](https://github.com/user-attachments/assets/2230d234-e4ba-4b53-9ca0-19560e70400b)
 
 ### More
 
