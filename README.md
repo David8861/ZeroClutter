@@ -13,7 +13,7 @@
 
 #### Before downloading a release, *verify your* computers architecture. Open 'Settings', then the 'System' tab, and lastly view 'System Type' under 'Device specifications' as follows:
 
-
+![Image](https://github.com/user-attachments/assets/46a5b1f6-a447-4f98-8a1d-d14b7d8d846c)
 
 
 ### Languages Used
