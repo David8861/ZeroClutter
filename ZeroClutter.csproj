@@ -1,5 +1,4 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows</TargetFramework>
@@ -7,8 +6,28 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationManifest>app.manifest</ApplicationManifest>
+    <StartupObject>ZeroClutter.Program</StartupObject>
+    <AssemblyName>ZeroClutter</AssemblyName>
+    <ApplicationIcon>Icons\Zero Clutter Icon.ico</ApplicationIcon>
+    <BaseOutputPath>C:\repos\ZeroClutter\bin</BaseOutputPath>
+    <PackageId>ZeroClutter</PackageId>
+    <Title>Zero Clutter</Title>
+    <Version>1.0.0</Version>
+    <Company>ZeroClutter</Company>
+    <Authors>David Amato</Authors>
+    <Product>Zero Clutter</Product>
+    <Copyright>David Amato. All Rights Reserved.</Copyright>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>maintenance; folder cleaning</PackageTags>
+    <PackageOutputPath>C:\repos\ZeroClutter\bin\ZeroClutter</PackageOutputPath>
+    <NeutralLanguage>en</NeutralLanguage>
+    <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
+    <Platforms>AnyCPU;x64;x86</Platforms>
+    <Configurations>Debug;Release;ZeroClutter x86</Configurations>
   </PropertyGroup>
-
+  <ItemGroup>
+    <Content Include="Icons\Zero Clutter Icon.ico" />
+  </ItemGroup>
   <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -16,12 +35,16 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
   </ItemGroup>
-
   <ItemGroup>
     <EmbeddedResource Update="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
-
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 </Project>
