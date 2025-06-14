@@ -19,6 +19,13 @@
 
 ## Usecase
 
+![Image](https://github.com/user-attachments/assets/9f314539-3241-4ed3-a162-3fa1fc0948a1)
+
+![Image](https://github.com/user-attachments/assets/8e4feba7-4b06-482d-9ab9-37366c0af26a)
+
+![Image](https://github.com/user-attachments/assets/a7ba78bf-de8c-4590-9c08-b1d3a0352823)
+
+
 ### Prefetch, Temp, and Recycle Bin Buttons
 
 #### The Prefetch button in the top row clean the files in the user's Prefetch folder. These files collect and accumulate over time, and can be deleted safely and easily. After one click, the user's Prefetch folder contents are deleted.
