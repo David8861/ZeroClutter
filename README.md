@@ -41,19 +41,31 @@
 
 #### The exclamation icon located on this button resembles the result of an action being ran on your computer. This button's function is to enable the user to view recent actions on their computer, and better understand why they happened, and next steps.
 
+![Image](https://github.com/user-attachments/assets/c2449785-6b54-4e20-860e-66ab25cd150e)
+
 ### Save and About Buttons
 
 #### The about button simply lists information regarding Zero Clutter and this repository. The save button writes a report to the root of C:\\. It provides information on what was cleaned in the most recent session.
 
 ## Extras
 
+![Image](https://github.com/user-attachments/assets/118360d1-b73a-49c0-80c9-e52046a1eaba)
+.![Image](https://github.com/user-attachments/assets/927b79d7-2187-4bf1-b4a6-043771d5e38a)
+
+![Image](https://github.com/user-attachments/assets/1a82952d-7507-4d2d-a50e-a52021c71902)
+.![Image](https://github.com/user-attachments/assets/7d80a2ef-dcdd-40ec-a7fe-01edabcb49d1)
+
 ### Light and Dark Mode
 
 #### This application's default theme is dark, but it has a button to quickly switch to a light theme as well. Above is an example of the app in either themes.
 
+![Image](https://github.com/user-attachments/assets/4dd5dbc3-6f4b-483e-89c1-adb30d4ef4b8)
+
 ### Portable
 
 #### Applications with minimal functions should be portable, enabling the user to use it easily across multiple machines. Zero Clutter can be loaded and copied from a USB drive, if required.
+
+![Image](https://github.com/user-attachments/assets/e9d6249f-3e31-48bc-b27c-5d7cae2fcf75)
 
 ### Low Memory Usage
 
