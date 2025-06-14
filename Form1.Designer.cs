@@ -42,6 +42,7 @@ namespace ZeroClutter
             saver = new Button();
             about = new Button();
             exit = new Button();
+            
             SuspendLayout();
             // 
             // backtodarkmode
@@ -212,6 +213,7 @@ namespace ZeroClutter
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(684, 346);
+            Cursor = Cursors.Default;
             Controls.Add(backtodarkmode);
             Controls.Add(changelightmode);
             Controls.Add(exit);
