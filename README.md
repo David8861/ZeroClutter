@@ -2,10 +2,7 @@
 
 ![Image](https://github.com/user-attachments/assets/bc2e760a-bce9-4294-b8d1-b73255ab980b)
 
-## A lightweight folder cleaner in one, *portable* excecutible.
-
-
-
+## A lightweight folder cleaner and maintenance app in one, *portable* executable.
 
 ### Application Info
 
@@ -20,8 +17,40 @@
 
 ![Image](https://github.com/user-attachments/assets/49aa2f30-1806-48f0-ab51-6f3a2c8611ff)
 
-### More
+### Usecase
 
+#### Prefetch, Temp, and Recycle Bin Buttons
 
+##### The Prefetch button in the top row clean the files in the user's Prefetch folder. These files collect and accumulate over time, and can be deleted safely and easily. After one click, the user's Prefetch folder contents are deleted.
 
-### Takeaways
+##### The Temp button clears the files contained in the user's Temp folder. These files collect due to certain actions by the user, and are more often than not a mix of files and folders. Just as the Prefetch button, click once and you are done.
+
+##### The files and folders located in Recycle Bin are specific to your User account, found in C:\Users\[*Your Username*]. However, because Zero Clutter was built to work on a variety of user machines, clicking this button will clean the bin located outside of a User directory.
+
+#### Control Panel and Event Viewer Button
+
+##### The yellow Control Panel button is a handy shortcut, to be used when the user wishes to delete installed applications that are taking up too much disk space. This was left open-ended, meaning the user selects what is worth keeping or deleting on their local disk.
+
+##### The exclamation icon located on this button resembles the result of an action being ran on your computer. This button's function is to enable the user to view recent actions on their computer, and better understand why they happened, and next steps.
+
+#### Save and About Buttons
+
+##### The about button simply lists information regarding Zero Clutter and this repository. The save button writes a report to the root of C:\\. It provides information on what was cleaned in the most recent session.
+
+### Extras
+
+#### Light and Dark Mode
+
+##### This application's default theme is dark, but it has a button to quickly switch to a light theme as well. Above is an example of the app in either themes.
+
+#### Portable
+
+##### Applications with minimal functions should be portable, enabling the user to use it easily across multiple machines. Zero Clutter can be loaded and copied from a USB drive, if required.
+
+#### Low Memory Usage
+
+##### Zero Clutter can run on both x64 and x86 architecture, and uses less than 50mb of RAM during use.
+
+### Summary
+
+#### Zero Clutter cleans files and folders on the user's PC with just a few clicks. As well as enabling them to view recent events, installed programs, or save a report to their PC.
