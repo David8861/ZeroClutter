@@ -32,6 +32,9 @@
 
 #### The files and folders located in Recycle Bin are specific to your User account, found in C:\Users\[*Your Username*]. However, because Zero Clutter was built to work on a variety of user machines, clicking this button will clean the bin located outside of a User directory.
 
+![Image](https://github.com/user-attachments/assets/0ed26494-3586-41fd-9510-dc798f538907)
+.![Image](https://github.com/user-attachments/assets/3de2f93d-12c6-4c8f-8ac8-6fba0375a775)
+
 ### Control Panel and Event Viewer Button
 
 #### The yellow Control Panel button is a handy shortcut, to be used when the user wishes to delete installed applications that are taking up too much disk space. This was left open-ended, meaning the user selects what is worth keeping or deleting on their local disk.
