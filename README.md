@@ -18,12 +18,11 @@
 ![Image](https://github.com/user-attachments/assets/49aa2f30-1806-48f0-ab51-6f3a2c8611ff)
 
 ## Usecase
-<div align = Center>
 
-  <img width = "33%" src = ![Image](https://github.com/user-attachments/assets/9f314539-3241-4ed3-a162-3fa1fc0948a1)>
-<img width = 33% src = ![Image](https://github.com/user-attachments/assets/8e4feba7-4b06-482d-9ab9-37366c0af26a)>
-<img width = 33% src = ![Image](https://github.com/user-attachments/assets/a7ba78bf-de8c-4590-9c08-b1d3a0352823)>
-</div>
+![Image](https://github.com/user-attachments/assets/9f314539-3241-4ed3-a162-3fa1fc0948a1)
+![Image](https://github.com/user-attachments/assets/8e4feba7-4b06-482d-9ab9-37366c0af26a)
+i![Image](https://github.com/user-attachments/assets/a7ba78bf-de8c-4590-9c08-b1d3a0352823)
+
 
 ### Prefetch, Temp, and Recycle Bin Buttons
 
