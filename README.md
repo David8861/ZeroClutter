@@ -1,6 +1,6 @@
 # Zero Clutter
 
-<center>![Image](https://github.com/user-attachments/assets/bc2e760a-bce9-4294-b8d1-b73255ab980b)</center>
+<center>![Image](https://github.com/user-attachments/assets/bc2e760a-bce9-4294-b8d1-b73255ab980b)<center/>
 
 ## A lightweight folder cleaner in one, *portable* excecutible.
 
