@@ -13,9 +13,6 @@ namespace ZeroClutter
         }
 
        
-
-
-
         private void changelightmode_Click(object sender, EventArgs e)
         {
             Cursor = Cursors.Default;
