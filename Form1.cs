@@ -175,7 +175,7 @@ namespace ZeroClutter
 
                 File.WriteAllText("C:\\ZeroClutter\\SaveReport.txt", "You cleaned Prefetch, Temp, and Recycle Bin.");
 
-                saver.Enabled = false; saver.ResetText(); saver.Text = "Saved to C:\\";
+                saver.Enabled = false; saver.ResetText(); 
             }
 
         }
